@@ -1,3 +1,4 @@
 # asdk
 
-Azure Stack templates
+Azure Stack templates for Fortinet products
+
