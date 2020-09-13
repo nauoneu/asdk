@@ -1,1 +1,3 @@
 # asdk
+
+Azure Stack templates
