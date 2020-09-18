@@ -1,0 +1,32 @@
+1. Deploy Single FGT from blob image with PS script
+D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\Single-VM-BareMinimum-BYOL\tu-fortigate-deploy-powershell.ps1
+
+2. Deploy Single FGT from marketplace with ARM template
+D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\Single-VM-BareMinimum-BYOL\tu-mainTemplate-BYOL.json
+D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\Single-VM-BareMinimum-BYOL\tu-mainTemplate-BYOL-deploy.txt
+
+3. Deploy FGT-HA from marketplace with ARM template
+D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu2-mainTemplate.json
+D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu2-mainTemplate_deploy.txt
+
+4. Deploy FGT-HA from marketplace with ARM template (without template link)
+D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu-mainTemplate.json
+D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu-mainTemplate_deploy.txt
+
+Modified
+publicIP sku ... standard -> basic
+API version
+remove template link - don't work in offline environment, not ideal for Azure Stack
+hardcode IP address
+specify API version with reference function
+
+5. Deploy Single FGT from blob image with ARM template
+D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\non-Marketplace Single VM Deployment\tu-mainTemplate.json
+D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\non-Marketplace Single VM Deployment\tu-mainTemplate-deploy.txt
+
+6. Deploy FGT-HA from blob image with ARM template
+D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu3-mainTemplate.json
+D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu3-mainTemplate_deploy.txt
+#combined the following
+D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA
+D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\non-Marketplace Single VM Deployment
