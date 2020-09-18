@@ -1,3 +1,13 @@
+How to Deploy FortiGate-VM on Azure Stack
+
+1. Open PowerShell and connect to Azure Stack
+$Endpoint = "https://management.local.azurestack.external"
+$EnvName = "AzureStackAdmin"
+Add-AzEnvironment -Name $EnvName -ARMEndpoint $Endpoint
+Connect-AzAccount -Environment $EnvName
+
+2. 
+
 1. Deploy Single FGT from blob image with PS script
 D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\Single-VM-BareMinimum-BYOL\tu-fortigate-deploy-powershell.ps1
 
