@@ -1,0 +1,16 @@
+1. deploy FGT 6.2.2 with HA template from marketplace
+2. exec factoryreset2
+
+
+FortiSIEM
+https://mantis.fortinet.com/bug_view_page.php?bug_id=0436310
+
+The FortiManager-VM support in the Azure Stack
+https://mantis.fortinet.com/bug_view_page.php?bug_id=0648545
+
+FortiAnalzyer-VM support in the Azure Stack Marketplace
+https://mantis.fortinet.com/bug_view_page.php?bug_id=0648546
+
+B866: Azure SDN connector try querying invalid FQDN when a user uses Azure Stack Integrated systems. 
+https://mantis.fortinet.com/bug_view_page.php?bug_id=0561909
+
