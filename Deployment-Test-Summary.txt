@@ -10,27 +10,159 @@ Connect-AzAccount -Environment $EnvName
 $templateFile = "path/to/template"
 
 Available templates:
-(1) Deploy Single FGT from marketplace
-SingleFGT_marketplace.json
+(1) Deploy Single FGT from marketplace (do not work now)
+- SingleFGT_marketplace.json
+#Original
 https://github.com/fortinetsolutions/Azure-Templates/tree/master/FortiGate/Others/Single-VM-BareMinimum-BYOL/mainTemplate-BYOL.json
 
-D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\Single-VM-BareMinimum-BYOL\tu-mainTemplate-BYOL.json
-D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\Single-VM-BareMinimum-BYOL\tu-mainTemplate-BYOL-deploy.txt
+$templateFile = "./SingleFGT_marketplace.json"
+#New-AzureRmResourceGroupDeployment `
+New-AzResourceGroupDeployment `
+-Name "fgtdeploy01" `
+-ResourceGroupName "tuenoresourcegroup01" `
+-TemplateFile $templateFile `
+-location "local" `
+-publicIPNewOrExistingOrNone "new" `
+-publicIPAddressName "tuenopublicip01" `
+-publicIPResourceGroup "tuenoresourcegroup01" `
+-publicIPAddressType "Static" `
+-vnetNewOrExisting "existing" `
+-vnetName "tuenovnet01" `
+-vnetResourceGroup "tuenoresourcegroup01" `
+-vnetAddressPrefix  "10.2.0.0/16" `
+-subnet1Name "tusubnet01" `
+-subnet1Prefix "10.2.0.0/24" `
+-subnet2Name "tusubnet02" `
+-subnet2Prefix "10.2.1.0/24" `
+-Debug
 
-(2) Deploy FGT-HA from marketplace
-FGT-APHA_marketplace.json
-D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu2-mainTemplate.json
-D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu2-mainTemplate_deploy.txt
+(2) Deploy FGT-HA from marketplace (worked)
+- FGT-APHA_marketplace.json
+#Original
+https://github.com/fortinet/azure-templates/blob/main/FortiGate/FortiGate-AP-HA/mainTemplate.json
 
-(3) Deploy Single FGT from blob image
-SingleFGT_blob.json
-D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\non-Marketplace Single VM Deployment\tu-mainTemplate.json
-D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\non-Marketplace Single VM Deployment\tu-mainTemplate-deploy.txt
+$templateFile = "./FGT-APHA_marketplace.json"
+New-AzResourceGroupDeployment `
+  -Name fgthadeploy `
+  -ResourceGroupName MyResourceGroup `
+  -TemplateFile $templateFile `
+  -location "local" `
+  -FortiGateNamePrefix "FGHA" `
+  -publicIPNewOrExisting "new" `
+  -publicIP2NewOrExisting "new" `
+  -publicIP3NewOrExisting "new" `
+  -publicIPAddressName "FGTAPClusterPublicIP" `
+  -publicIPAddressResourceGroup "MyResourceGroup" `
+  -publicIPAddress2Name "FGTAMgmtPublicIP" `
+  -publicIPAddress2ResourceGroup "MyResourceGroup" `
+  -publicIPAddress3Name "FGTBMgmtPublicIP" `
+  -publicIPAddress3ResourceGroup "MyResourceGroup" `
+  -publicIPAddressType "Static" `
+  -vnetNewOrExisting "new" `
+  -vnetName "FGHAVnet" `
+  -vnetResourceGroup "MyResourceGroup" `
+  -vnetAddressPrefix "10.2.0.0/16" `
+  -Subnet1Name "EntrySubnet" `
+  -Subnet1Prefix "10.2.1.0/24" `
+  -Subnet2Name "TransitSubnet" `
+  -Subnet2Prefix "10.2.2.0/24" `
+  -FGT-A-IP-Subnet2 "10.2.2.4" `
+  -Subnet3Name "HASyncSubnet" `
+  -Subnet3Prefix "10.2.3.0/28" `
+  -Subnet4Name "ManagementSubnet" `
+  -Subnet4Prefix "10.2.4.0/28" `
+  -Subnet5Name "ProtectedSubnet" `
+  -Subnet5Prefix "10.2.5.0/24" `
+  -Debug `
+  -Verbose
+
+(3) Deploy Single FGT from blob image (do not work / to be modified or deleted)
+- SingleFGT_blob.json
+#Original
+https://github.com/fortinetsolutions/Azure-Templates/blob/master/FortiGate/Others/%20non-Marketplace%20Single%20VM%20Deployment/mainTemplate.json
+
+$templateFile = "./SingleFGT_blob.json"
+
+New-AzResourceGroupDeployment `
+  -Name fgthadeploy `
+  -ResourceGroupName user01resourcegroup01 `
+  -TemplateFile $templateFile `
+  -location "local" `
+  -FortiGateNamePrefix "FGHA" `
+  -publicIPNewOrExisting "new" `
+  -publicIP2NewOrExisting "new" `
+  -publicIP3NewOrExisting "new" `
+  -publicIPAddressName "FGTAPClusterPublicIP" `
+  -publicIPAddressResourceGroup "user01resourcegroup01" `
+  -publicIPAddress2Name "FGTAMgmtPublicIP" `
+  -publicIPAddress2ResourceGroup "user01resourcegroup01" `
+  -publicIPAddress3Name "FGTBMgmtPublicIP" `
+  -publicIPAddress3ResourceGroup "user01resourcegroup01" `
+  -publicIPAddressType "Static" `
+  -vnetNewOrExisting "new" `
+  -vnetName "FGHAVnet" `
+  -vnetResourceGroup "user01resourcegroup01" `
+  -vnetAddressPrefix "10.0.0.0/16" `
+  -Subnet1Name "EntrySubnet" `
+  -Subnet1Prefix "10.0.1.0/24" `
+  -Subnet2Name "TransitSubnet" `
+  -Subnet2Prefix "10.0.2.0/24" `
+  -Subnet3Name "HASyncSubnet" `
+  -Subnet3Prefix "10.0.3.0/28" `
+  -Subnet4Name "ManagementSubnet" `
+  -Subnet4Prefix "10.0.4.0/28" `
+  -Subnet5Name "ProtectedSubnet" `
+  -Subnet5Prefix "10.0.5.0/24"
+
+  -FGT-A-IP-Subnet2 "10.0.2.4" `
+  -Debug `
+  -Verbose
 
 (4) Deploy FGT-HA from blob image
-FGT-APHA_blob.json
-D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu3-mainTemplate.json
-D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu3-mainTemplate_deploy.txt
+- FGT-APHA_blob.json
+
 #combined the following
-D:\ASDKScripts\azure-templates-master-new\FortiGate\FortiGate-AP-HA
-D:\ASDKScripts\Azure-Templates-master\FortiGate\Others\non-Marketplace Single VM Deployment
+https://github.com/fortinet/azure-templates/blob/main/FortiGate/FortiGate-AP-HA/mainTemplate.json
+https://github.com/fortinetsolutions/Azure-Templates/blob/master/FortiGate/Others/%20non-Marketplace%20Single%20VM%20Deployment/mainTemplate.json
+
+1. Create ResourceGroup, StorageAccount and Container.
+2. Convert FortiOS vhd to fixed.
+   Convert-VHD ...
+3. Upload the VHD into container named images.
+4. Run the following deployment.
+
+$templateFile = "C:\Users\AzureStackAdmin\Documents\Azure\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu3-mainTemplate.json"
+
+New-AzResourceGroupDeployment `
+  -Name fgthadeploy `
+  -ResourceGroupName user01resourcegroup01 `
+  -TemplateFile $templateFile `
+  -location "local" `
+  -FortiGateNamePrefix "FGHA" `
+  -StorageAccountName "user01storage" `
+  -publicIPNewOrExisting "new" `
+  -publicIP2NewOrExisting "new" `
+  -publicIP3NewOrExisting "new" `
+  -publicIPAddressName "FGTAPClusterPublicIP" `
+  -publicIPAddressResourceGroup "user01resourcegroup01" `
+  -publicIPAddress2Name "FGTAMgmtPublicIP" `
+  -publicIPAddress2ResourceGroup "user01resourcegroup01" `
+  -publicIPAddress3Name "FGTBMgmtPublicIP" `
+  -publicIPAddress3ResourceGroup "user01resourcegroup01" `
+  -publicIPAddressType "Static" `
+  -vnetNewOrExisting "new" `
+  -vnetName "FGHAVnet" `
+  -vnetResourceGroup "user01resourcegroup01" `
+  -vnetAddressPrefix "10.0.0.0/16" `
+  -Subnet1Name "EntrySubnet" `
+  -Subnet1Prefix "10.0.1.0/24" `
+  -Subnet2Name "TransitSubnet" `
+  -Subnet2Prefix "10.0.2.0/24" `
+  -Subnet3Name "HASyncSubnet" `
+  -Subnet3Prefix "10.0.3.0/28" `
+  -Subnet4Name "ManagementSubnet" `
+  -Subnet4Prefix "10.0.4.0/28" `
+  -Subnet5Name "ProtectedSubnet" `
+  -Subnet5Prefix "10.0.5.0/24" `
+  -imagename "fortios623.vhd"
+
