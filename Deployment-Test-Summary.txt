@@ -120,10 +120,10 @@ $templateFile = "./FGT-APHA_blob.json"
 https://github.com/fortinet/azure-templates/blob/main/FortiGate/FortiGate-AP-HA/mainTemplate.json
 https://github.com/fortinetsolutions/Azure-Templates/blob/master/FortiGate/Others/%20non-Marketplace%20Single%20VM%20Deployment/mainTemplate.json
 
-1. Create ResourceGroup, StorageAccount and Container.
-2. Convert FortiOS vhd to fixed.
-   Convert-VHD ...
-3. Upload the VHD into container named images.
+1. Create ResourceGroup, StorageAccount and Container ("images" and "vhds").
+2. Convert VHD image to fixed.
+   Convert-VHD -Path .\fortios.vhd -DestinationPath .\fortios642.vhd -VHDType Fixed
+3. Upload the VHD on container named images.
 4. Run the following deployment.
 
 New-AzResourceGroupDeployment `
@@ -159,3 +159,38 @@ New-AzResourceGroupDeployment `
   -Subnet5Prefix "10.0.5.0/24" `
   -imagename "fortios623.vhd"
 
+(4) Deploy FMG from blob image
+$templateFile = "./fmgtemplate.json"
+
+1. Create ResourceGroup, StorageAccount and Container ("images" and "vhds").
+2. Convert VHD image to fixed.
+   Convert-VHD -Path .\fmg.vhd -DestinationPath .\fmg642.vhd -VHDType Fixed
+3. Upload the VHD on container named images.
+4. Run the following deployment.
+
+$resourcegroup = "MyResourceGroup"
+$storageaccount = "MyStorage"
+$imagename = "fmg642.vhd"
+
+New-AzResourceGroupDeployment `
+  -Name fmgdeploy `
+  -ResourceGroupName $resourcegroup `
+  -TemplateFile $templateFile `
+  -location "local" `
+  -FortiManagerName "FortiManager" `
+  -StorageAccountName $storageaccount `
+  -instanceType "Standard_D2" `
+  -publicIPNewOrExistingOrNone "new" `
+  -publicIPAddressName "FortiManager-PublicIP" `
+  -publicIPResourceGroup $resourcegroup `
+  -publicIPAddressType "Static" `
+  -vnetNewOrExisting "new" `
+  -vnetName "FTNTVnet" `
+  -vnetResourceGroup $resourcegroup `
+  -vnetAddressPrefixes "10.1.0.0/16" `
+  -subnetName "FortiManagerSubnet" `
+  -subnetPrefix "10.1.10.0/24" `
+  -FortiManagerPrivateIP "10.1.10.4" `
+  -imagename $imagename `
+  -Debug `
+  -Verbose
