@@ -11,11 +11,10 @@ $templateFile = "path/to/template"
 
 Available templates:
 (1) Deploy Single FGT from marketplace (do not work now)
-- SingleFGT_marketplace.json
+$templateFile = "SingleFGT_marketplace.json"
 #Original
 https://github.com/fortinetsolutions/Azure-Templates/tree/master/FortiGate/Others/Single-VM-BareMinimum-BYOL/mainTemplate-BYOL.json
 
-$templateFile = "./SingleFGT_marketplace.json"
 #New-AzureRmResourceGroupDeployment `
 New-AzResourceGroupDeployment `
 -Name "fgtdeploy01" `
@@ -37,11 +36,10 @@ New-AzResourceGroupDeployment `
 -Debug
 
 (2) Deploy FGT-HA from marketplace (worked)
-- FGT-APHA_marketplace.json
+$templateFile = "./FGT-APHA_marketplace.json"
 #Original
 https://github.com/fortinet/azure-templates/blob/main/FortiGate/FortiGate-AP-HA/mainTemplate.json
 
-$templateFile = "./FGT-APHA_marketplace.json"
 New-AzResourceGroupDeployment `
   -Name fgthadeploy `
   -ResourceGroupName MyResourceGroup `
@@ -77,11 +75,9 @@ New-AzResourceGroupDeployment `
   -Verbose
 
 (3) Deploy Single FGT from blob image (do not work / to be modified or deleted)
-- SingleFGT_blob.json
+$templateFile = "./SingleFGT_blob.json"
 #Original
 https://github.com/fortinetsolutions/Azure-Templates/blob/master/FortiGate/Others/%20non-Marketplace%20Single%20VM%20Deployment/mainTemplate.json
-
-$templateFile = "./SingleFGT_blob.json"
 
 New-AzResourceGroupDeployment `
   -Name fgthadeploy `
@@ -119,8 +115,7 @@ New-AzResourceGroupDeployment `
   -Verbose
 
 (4) Deploy FGT-HA from blob image
-- FGT-APHA_blob.json
-
+$templateFile = "./FGT-APHA_blob.json"
 #combined the following
 https://github.com/fortinet/azure-templates/blob/main/FortiGate/FortiGate-AP-HA/mainTemplate.json
 https://github.com/fortinetsolutions/Azure-Templates/blob/master/FortiGate/Others/%20non-Marketplace%20Single%20VM%20Deployment/mainTemplate.json
@@ -130,8 +125,6 @@ https://github.com/fortinetsolutions/Azure-Templates/blob/master/FortiGate/Other
    Convert-VHD ...
 3. Upload the VHD into container named images.
 4. Run the following deployment.
-
-$templateFile = "C:\Users\AzureStackAdmin\Documents\Azure\azure-templates-master-new\FortiGate\FortiGate-AP-HA\tu3-mainTemplate.json"
 
 New-AzResourceGroupDeployment `
   -Name fgthadeploy `
