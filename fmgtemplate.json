@@ -1,0 +1,373 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "type": "string",
+            "metadata": {
+                "description": "location - same as above"
+            }
+        },
+        "FortiManagerName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name for FortiManager virtual appliance."
+            }
+        },
+        "instanceType": {
+            "type": "string",
+            "defaultValue": "Standard_D2"
+        },
+        "StorageAccountName": {
+            "type": "string",
+            "metadata": {
+                "description": "Unique *lowercase* name for the Storage Account where the Virtual Machine's disks will be placed. Note, when deploying a custom template, Azure doesn't check these values for uniqueness."
+            }
+        },
+        "adminUsername": {
+            "type": "string",
+            "metadata": {
+                "description": "Username for the FortiManager virtual appliance."
+            }
+        },
+        "adminPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "Password for the FortiManager virtual appliance."
+            }
+        },
+        "vnetNewOrExisting": {
+            "type": "string",
+            "defaultValue": "new",
+            "allowedValues": [
+                "new",
+                "existing"
+            ],
+            "metadata": {
+                "description": "Identify whether to use a new or existing vnet"
+            }
+        },
+        "vnetName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the Azure virtual network."
+            }
+        },
+        "vnetResourceGroup": {
+            "type": "string",
+            "metadata": {
+                "description": "Resource Group containing the virtual network - or new resource group from above (if new vnet)"
+            }
+        },
+        "vnetAddressPrefixes": {
+            "type": "array"
+        },
+        "subnetName": {
+            "type": "string"
+        },
+        "subnetPrefix": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Subnet 1 Prefix in CIDR notation, example: 10.2.1.0/24"
+            }
+        },
+        "FortiManagerPrivateIP": {
+            "type": "string",
+            "metadata": {
+                "description": "Available IP on subnet"
+            }
+        },
+        "publicIPNewOrExistingOrNone": {
+            "type": "string",
+            "defaultValue": "new",
+            "allowedValues": [
+                "new",
+                "existing",
+                "none"
+            ],
+            "metadata": {
+                "description": "Identify if to use a public IP and if so whether it is new"
+            }
+        },
+        "publicIPAddressName": {
+            "type": "string",
+            "defaultValue": "uselessStringInCaseNone",
+            "metadata": {
+                "description": "Name of Public IP address resource."
+            }
+        },
+        "publicIPAddressType": {
+            "defaultValue": "Static",
+            "allowedValues": [
+                "Dynamic",
+                "Static"
+            ],
+            "metadata": {
+                "description": "Type of public IP address - A 'dynamic' address will change during reboot or periods of inactivity"
+            },
+            "type": "string"
+        },
+        "publicIPResourceGroup": {
+            "type": "string",
+            "defaultValue": "uselessStringInCaseNone",
+            "metadata": {
+                "description": "Resource Group containing the public IP - or new resource group from above (if new public IP)"
+            }
+        },
+        "imagename":{
+            "type": "string",
+            "metadata": {
+                "description": "Name of local image hosted in an images container in your existing storage account."
+            }
+        },
+        "FortinetTags": {
+            "type": "object",
+            "defaultValue": {
+                "provider": "6EB3B02F-50E5-4A3E-8CB8-2E129258317D"
+            }
+        }
+    },
+    "variables": {
+        "vnetID": "[resourceId(parameters('vnetResourceGroup'),'Microsoft.Network/virtualNetworks', parameters('vnetName'))]",
+        "subnetRef": "[concat(variables('vnetID'), '/subnets/', parameters('subnetName'))]",
+        "publicIPID": "[resourceId(parameters('publicIPResourceGroup'), 'Microsoft.Network/publicIPAddresses', parameters('publicIPAddressName'))]",
+        "NSGName": "[concat(parameters('FortiManagerName'),'-NSG')]",
+        "networkInterfaceName": "[concat(parameters('FortiManagerName'), '-NIC0')]",
+        "NICwPIP": [
+            {
+                "name": "ipconfig1",
+                "properties": {
+                    "privateIPAllocationMethod": "Static",
+                    "privateIPAddress": "[parameters('FortiManagerPrivateIP')]",
+                    "subnet": {
+                        "id": "[variables('SubnetRef')]"
+                    },
+                    "publicIPAddress": {
+                        "id": "[variables('publicIPID')]"
+                    }
+                }
+            }
+        ],
+        "NICwoPIP": [
+            {
+                "name": "ipconfig1",
+                "properties": {
+                    "privateIPAllocationMethod": "Static",
+                    "privateIPAddress": "[parameters('FortiManagerPrivateIP')]",
+                    "subnet": {
+                        "id": "[variables('SubnetRef')]"
+                    }
+                }
+            }
+        ]
+    },
+    "resources": [
+        {
+            "apiVersion": "2018-02-01",
+            "name": "pid-02612259-f809-419a-a2c1-fbb4211b4a35",
+            "type": "Microsoft.Resources/deployments",
+            "properties": {
+                "mode": "Incremental",
+                "template": {
+                    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+                    "contentVersion": "1.0.0.0",
+                    "resources": []
+                }
+            }
+        },
+        {
+            "condition": "[equals(parameters('vnetNewOrExisting'), 'new')]",
+            "type": "Microsoft.Network/virtualNetworks",
+            "apiVersion": "2017-09-01",
+            "name": "[parameters('vnetName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": "[parameters('vnetAddressPrefixes')]"
+                },
+                "subnets": [
+                    {
+                        "name": "[parameters('subnetName')]",
+                        "properties": {
+                            "addressPrefix": "[parameters('subnetPrefix')]"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "condition": "[equals(parameters('publicIPNewOrExistingOrNone'), 'new')]",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "apiVersion": "2017-09-01",
+            "tags": {
+                "provider": "[toUpper(parameters('FortinetTags').provider)]"
+            },
+            "name": "[parameters('publicIPAddressName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "publicIPAllocationMethod": "[parameters('publicIPAddressType')]"
+            }
+        },
+        {
+            "apiVersion": "2017-09-01",
+            "tags": {
+                "provider": "[toUpper(parameters('FortinetTags').provider)]"
+            },
+            "type": "Microsoft.Network/networkSecurityGroups",
+            "name": "[variables('NSGName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "securityRules": [
+                    {
+                        "name": "AllowSSHInbound",
+                        "properties": {
+                            "description": "Allow SSH In",
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "22",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 100,
+                            "direction": "Inbound"
+                        }
+                    },
+                    {
+                        "name": "AllowHTTPInbound",
+                        "properties": {
+                            "description": "Allow 80 In",
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "80",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 110,
+                            "direction": "Inbound"
+                        }
+                    },
+                    {
+                        "name": "AllowHTTPSInbound",
+                        "properties": {
+                            "description": "Allow 443 In",
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "443",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 120,
+                            "direction": "Inbound"
+                        }
+                    },
+                    {
+                        "name": "AllowDevRegInbound",
+                        "properties": {
+                            "description": "Allow 514 in for device registration",
+                            "protocol": "Tcp",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "514",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 130,
+                            "direction": "Inbound"
+                        }
+                    },
+                    {
+                        "name": "AllowAllOutbound",
+                        "properties": {
+                            "description": "AllowOut",
+                            "protocol": "*",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "*",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 105,
+                            "direction": "Outbound"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "apiVersion": "2017-09-01",
+            "dependsOn": [
+                "[variables('NSGName')]",
+                "[parameters('vnetName')]",
+                "[parameters('publicIPAddressName')]"
+            ],
+            "tags": {
+                "provider": "[toUpper(parameters('FortinetTags').provider)]"
+            },
+            "type": "Microsoft.Network/networkInterfaces",
+            "name": "[variables('networkInterfaceName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "ipConfigurations": "[if(equals(parameters('publicIPNewOrExistingOrNone'), 'none'), variables('NICwoPIP'), variables('NICwPIP'))]",
+                "enableIPForwarding": false
+            }
+        },
+        {
+            "name": "[parameters('FortiManagerName')]",
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2017-03-30",
+            "tags": {
+                "provider": "[toUpper(parameters('FortinetTags').provider)]"
+            },
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[variables('networkInterfaceName')]"
+            ],
+            "properties": {
+                "osProfile": {
+                    "computerName": "[parameters('FortiManagerName')]",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword": "[parameters('adminPassword')]"
+                },
+                "hardwareProfile": {
+                    "vmSize": "[parameters('instanceType')]"
+                },
+                "storageProfile": {
+                    "osDisk": {
+                        "name": "[concat(parameters('FortiManagerName'),'-osDisk')]",
+                        "caching": "ReadWrite",
+                        "createOption": "FromImage",
+                        "osType": "linux",
+                        "image": {
+                            "uri": "[concat('http://',parameters('StorageAccountName'),'.blob.local.azurestack.external/images/',parameters('imagename'))]"
+                        },
+                        "vhd": {
+                            "uri": "[concat('http://',parameters('StorageAccountName'),'.blob.local.azurestack.external/vhds/',parameters('FortiManagerName'),'-',deployment().name,'-',uniqueString(resourceGroup().id),'-osdisk.vhd')]"
+                        }
+                    },
+                    "dataDisks": [
+                        {
+                            "name": "[concat(parameters('FortiManagerName'),'-dataDisk')]",
+                            "createOption": "Empty",
+                            "diskSizeGB": 100,
+                            "lun": 0,
+                            "vhd": {
+                                "uri": "[concat('http://',parameters('StorageAccountName'),'.blob.local.azurestack.external/vhds/',parameters('FortiManagerName'),'-',deployment().name,'-',uniqueString(resourceGroup().id),'-datadisk.vhd')]"
+                            }
+                        }
+                    ]
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('networkInterfaceName'))]"
+                        }
+                    ]
+                }
+            },
+            "plan": {
+                "name": "fortinet-fortimanager",
+                "publisher": "fortinet",
+                "product": "fortinet-fortimanager"
+            }
+        }
+    ]
+}
