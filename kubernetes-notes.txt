@@ -1,0 +1,27 @@
+Kubernetes on Azure Stack
+
+kubectl.exe
+https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-powershell-from-psgallery
+
+For POC Only: Kubernetes Azure Stack Marketplace
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-solution-template-kubernetes-azuread?view=azs-2005
+
+For Production: AKS engine
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2005
+
+What is the AKS engine on Azure Stack Hub?
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2005
+
+How to install AKS on Azure Stack
+https://docs.bitnami.com/tutorials/install-aks-azure-stack/
+
+Release notes for the AKS engine on Azure Stack Hub
+https://docs.microsoft.com/en-us/azure-stack/user/kubernetes-aks-engine-release-notes?view=azs-2005
+
+Set up the prerequisites for the AKS engine on Azure Stack Hub
+https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-kubernetes-aks-engine-set-up?view=azs-2005#matching-engine-to-base-image-version
+Matching engine to base image version
+https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#supported-aks-engine-versions
+
+Add the Azure Kubernetes Services (AKS) engine prerequisites to the Azure Stack Hub Marketplace
+https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-aks-engine?view=azs-2005
