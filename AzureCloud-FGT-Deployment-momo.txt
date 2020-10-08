@@ -1,0 +1,217 @@
+Azure FGT deployment memo:
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+                                                                                                                                                                        Try the new cross-platform PowerShell https://aka.ms/pscore6                                                                                                                                                                                                                                                                                    PS C:\WINDOWS\system32> $PSVersionTable.PSVersion                                                                                                                                                                                                                                                                                               Major  Minor  Build  Revision                                                                                                                                           -----  -----  -----  --------                                                                                                                                           5      1      18362  752                                                                                                                                                
+
+PS C:\WINDOWS\system32> Install-Module -Name PowerShellGet -Force
+WARNING: The version '1.4.7' of module 'PackageManagement' is currently in use. Retry the operation after closing the applications.
+PS C:\WINDOWS\system32> Get-InstalledModule
+
+Version              Name                                Repository           Description
+-------              ----                                ----------           -----------
+1.4.7                PackageManagement                   PSGallery            PackageManagement (a.k.a. OneGet) is a new way to discover and install software packag...
+2.2.5                PowerShellGet                       PSGallery            PowerShell module with commands for discovering, installing, updating and publishing t...
+12.0.0.15947289      VMware.CloudServices                PSGallery            PowerCLI CloudServices sample module.
+7.0.0.15902843       VMware.DeployAutomation             PSGallery            This Windows PowerShell module contains PowerCLI Auto Deploy cmdlets.
+7.0.0.15902843       VMware.ImageBuilder                 PSGallery            This Windows PowerShell module contains PowerCLI ImageBuilder cmdlets.
+12.0.0.15947286      VMware.PowerCLI                     PSGallery            This Windows PowerShell module contains VMware.PowerCLI
+7.0.0.15939650       VMware.Vim                          PSGallery            This Windows PowerShell module contains PowerCLI Vim.
+12.0.0.15939657      VMware.VimAutomation.Cis.Core       PSGallery            This Windows PowerShell module contains PowerCLI Cloud Infrastructure Suite cmdlets.
+12.0.0.15940183      VMware.VimAutomation.Cloud          PSGallery            This Windows PowerShell module contains PowerCLI Cloud cmdlets.
+12.0.0.15939652      VMware.VimAutomation.Common         PSGallery            This Windows PowerShell module contains functionality required by multiple PowerCLI mo...
+12.0.0.15939655      VMware.VimAutomation.Core           PSGallery            This Windows PowerShell module contains Windows PowerShell cmdlets for managing vSphere.
+12.0.0.15939647      VMware.VimAutomation.Hcx            PSGallery            This Windows PowerShell module contains PowerCLI HCX cmdlets.
+7.12.0.15718406      VMware.VimAutomation.HorizonView    PSGallery            This Windows PowerShell module contains Connect/Disconnect cmdlets for View API service.
+12.0.0.15939670      VMware.VimAutomation.License        PSGallery            This Windows PowerShell module contains PowerCLI cmdlets for managing VMware product l...
+12.0.0.15939671      VMware.VimAutomation.Nsxt           PSGallery            This Windows PowerShell module contains PowerCLI NSXT cmdlets.
+12.0.0.15939651      VMware.VimAutomation.Sdk            PSGallery            This Windows PowerShell module contains PowerCLI Sdk.
+12.0.0.15939672      VMware.VimAutomation.Security       PSGallery            This Windows PowerShell module contains PowerCLI security management cmdlets.
+11.5.0.14899557      VMware.VimAutomation.Srm            PSGallery            This Windows PowerShell module contains PowerCLI SRM cmdlets.
+12.0.0.15939648      VMware.VimAutomation.Storage        PSGallery            This Windows PowerShell module contains PowerCLI storage management cmdlets.
+1.3.0.0              VMware.VimAutomation.StorageUtility PSGallery            This Windows PowerShell module contains utility scripts for storage.
+12.0.0.15940185      VMware.VimAutomation.Vds            PSGallery            This Windows PowerShell module contains PowerCLI VDS cmdlets.
+12.0.0.15947287      VMware.VimAutomation.Vmc            PSGallery            This Windows PowerShell module contains PowerCLI VMC cmdlets.
+12.0.0.15940184      VMware.VimAutomation.vROps          PSGallery            This Windows PowerShell module contains PowerCLI vROps cmdlets.
+12.0.0.15947288      VMware.VimAutomation.WorkloadMan... PSGallery            PowerShell commands for automation of workloads related functionality in vSphere.
+6.5.1.7862888        VMware.VumAutomation                PSGallery            This Windows PowerShell module contains PowerCLI VUM cmdlets.
+4.2.0                Az                                  PSGallery            Microsoft Azure PowerShell - Cmdlets to manage resources in Azure. This module is comp...
+1.8.1                Az.Accounts                         PSGallery            Microsoft Azure PowerShell - Accounts credential management cmdlets for Azure Resource...
+1.1.1                Az.Advisor                          PSGallery            Microsoft Azure PowerShell - Azure Advisor Cmdlets for Advisor in Windows PowerShell a...
+1.1.1                Az.Aks                              PSGallery            Microsoft Azure PowerShell - Azure managed Kubernetes cmdlets for Windows PowerShell a...
+1.1.3                Az.AnalysisServices                 PSGallery            Microsoft Azure PowerShell - Analysis Services cmdlets for Windows PowerShell and Powe...
+2.0.1                Az.ApiManagement                    PSGallery            Microsoft Azure PowerShell - Api Management service cmdlets for Azure Resource Manager...
+1.1.0                Az.ApplicationInsights              PSGallery            Microsoft Azure PowerShell - Application Insights management cmdlets for Azure Resourc...
+1.3.6                Az.Automation                       PSGallery            Microsoft Azure PowerShell - Automation service cmdlets for Azure Resource Manager in ...
+3.0.0                Az.Batch                            PSGallery            Microsoft Azure PowerShell - Batch service cmdlets for Azure Resource Manager in Windo...
+1.0.3                Az.Billing                          PSGallery            Microsoft Azure PowerShell - Billing service cmdlets for Azure Resource Manager in Win...
+1.4.3                Az.Cdn                              PSGallery            Microsoft Azure PowerShell - CDN service cmdlets for Azure Resource Manager in Windows...
+1.4.0                Az.CognitiveServices                PSGallery            Microsoft Azure PowerShell - Cognitive Services management cmdlets for Azure Resource ...
+4.1.0                Az.Compute                          PSGallery            Microsoft Azure PowerShell - Compute service cmdlets for Azure Resource Manager in Win...
+1.0.3                Az.ContainerInstance                PSGallery            Microsoft Azure PowerShell - Container Instance cmdlets for Azure Resource Manager in ...
+1.1.1                Az.ContainerRegistry                PSGallery            Microsoft Azure PowerShell - Container Registry service cmdlets for Azure Resource Man...
+1.1.0                Az.DataBoxEdge                      PSGallery            Microsoft Azure PowerShell - DataBoxEdge service cmdlets for Azure Resource Manager in...
+1.8.1                Az.DataFactory                      PSGallery            Microsoft Azure PowerShell - Data Factory service cmdlets for Azure Resource Manager i...
+1.0.2                Az.DataLakeAnalytics                PSGallery            Microsoft Azure PowerShell - Data Lake Analytics in Windows PowerShell and PowerShell ...
+1.2.8                Az.DataLakeStore                    PSGallery            Microsoft Azure PowerShell - Azure Data Lake Store cmdlets in Windows PowerShell and P...
+1.0.0                Az.DataShare                        PSGallery            Microsoft Azure PowerShell - DataShare service cmdlets for Azure Resource Manager in W...
+1.1.0                Az.DeploymentManager                PSGallery            PowerShell .Net Core Microsoft Azure PowerShell - Deployment Manager cmdlets for Azure...
+1.0.0                Az.DesktopVirtualization            PSGallery            Microsoft Azure PowerShell: DesktopVirtualization cmdlets
+1.0.2                Az.DevTestLabs                      PSGallery            Microsoft Azure PowerShell - DevTest Labs service cmdlets for Azure Resource Manager i...
+1.1.2                Az.Dns                              PSGallery            Microsoft Azure PowerShell - DNS service cmdlets for Azure Resource Manager in Windows... 1.2.3                Az.EventGrid                        PSGallery            Microsoft Azure PowerShell - Event Grid service cmdlets for Azure Resource Manager in ... 1.4.3                Az.EventHub                         PSGallery            Microsoft Azure PowerShell - Event Hubs service cmdlets for Azure Resource Manager in ... 1.5.0                Az.FrontDoor                        PSGallery            Microsoft Azure PowerShell - Front Door service cmdlets for Azure Resource Manager in ... 1.0.0                Az.Functions                        PSGallery            Microsoft Azure PowerShell - Azure Functions service cmdlets for Azure Resource Manage... 3.2.0                Az.HDInsight                        PSGallery            Microsoft Azure PowerShell - HDInsight service cmdlets for Azure Resource Manager in W... 1.0.2                Az.HealthcareApis                   PSGallery            Microsoft Azure PowerShell - HealthcareApis management cmdlets for Azure Resource Mana... 2.5.0                Az.IotHub                           PSGallery            Microsoft Azure PowerShell - IoT Hub service cmdlets for Azure Resource Manager in Win... 2.0.0                Az.KeyVault                         PSGallery            Microsoft Azure PowerShell - Key Vault service cmdlets for Azure Resource Manager in W...
+1.3.2                Az.LogicApp                         PSGallery            Microsoft Azure PowerShell - Logic Apps cmdlets for Azure Resource Manager in Windows ...
+1.1.3                Az.MachineLearning                  PSGallery            Microsoft Azure PowerShell - Machine Learning Web Services cmdlets for Azure Resource ...
+1.0.0                Az.Maintenance                      PSGallery            Microsoft Azure PowerShell - Maintenance cmdlets for Azure Resource Manager in Windows...
+1.0.2                Az.ManagedServices                  PSGallery            Microsoft Azure PowerShell - ManagedServices cmdlets for Azure Resource Manager
+1.0.2                Az.MarketplaceOrdering              PSGallery            Microsoft Azure PowerShell - Marketplace Ordering agreements service cmdlets for Azure...
+1.1.1                Az.Media                            PSGallery            Microsoft Azure PowerShell - Media service cmdlets for Azure Resource Manager in Windo...
+2.0.0                Az.Monitor                          PSGallery            Microsoft Azure PowerShell - Monitor service cmdlets for Azure Resource Manager in Win...
+3.0.0                Az.Network                          PSGallery            Microsoft Azure PowerShell - Networking service cmdlets for Azure Resource Manager in ...
+1.1.1                Az.NotificationHubs                 PSGallery            Microsoft Azure PowerShell - Notification Hubs cmdlets for Azure Resource Manager in W...
+2.1.0                Az.OperationalInsights              PSGallery            Microsoft Azure PowerShell - Operational Insights service cmdlets for Azure Resource M...
+1.3.1                Az.PolicyInsights                   PSGallery            Microsoft Azure PowerShell - Azure Policy Insights cmdlets for Windows PowerShell and ...
+1.1.2                Az.PowerBIEmbedded                  PSGallery            Microsoft Azure PowerShell - Power BI Embedded service management cmdlets for Azure Re...
+1.0.3                Az.PrivateDns                       PSGallery            Microsoft Azure PowerShell - Private DNS service cmdlets for Azure Resource Manager in...
+2.9.1                Az.RecoveryServices                 PSGallery            Microsoft Azure PowerShell - Recovery Services cmdlets for Azure Resource Manager in W...
+1.2.1                Az.RedisCache                       PSGallery            Microsoft Azure PowerShell - Redis Cache service cmdlets for Azure Resource Manager in...
+1.0.3                Az.Relay                            PSGallery            Microsoft Azure PowerShell - Relay service cmdlets for Azure Resource Manager in Windo...
+2.1.0                Az.Resources                        PSGallery            Microsoft Azure PowerShell - Azure Resource Manager and Active Directory cmdlets in Wi...
+1.4.1                Az.ServiceBus                       PSGallery            Microsoft Azure PowerShell - Service Bus service cmdlets for Azure Resource Manager in...
+2.1.0                Az.ServiceFabric                    PSGallery            Microsoft Azure PowerShell - Service Fabric cmdlets for Azure Resource Manager in Wind...
+1.1.1                Az.SignalR                          PSGallery            Microsoft Azure PowerShell - Azure SignalR service commands for Windows PowerShell and...
+2.7.0                Az.Sql                              PSGallery            Microsoft Azure PowerShell - SQL service cmdlets for Azure Resource Manager in Windows...
+1.1.0                Az.SqlVirtualMachine                PSGallery            Microsoft Azure PowerShell - SqlVirtualMachine service cmdlets for Azure Resource Mana...
+2.1.0                Az.Storage                          PSGallery            Microsoft Azure PowerShell - Storage service data plane and management cmdlets for Azu...
+1.2.3                Az.StorageSync                      PSGallery            Microsoft Azure PowerShell - Storage Sync cmdlets in Windows PowerShell and PowerShell...
+1.0.1                Az.StreamAnalytics                  PSGallery            Microsoft Azure PowerShell - Stream Analytics service cmdlets for Azure Resource Manag...
+1.0.0                Az.Support                          PSGallery            Microsoft Azure PowerShell - Azure Support cmdlets for Azure Resource Manager in Windo...
+1.0.4                Az.TrafficManager                   PSGallery            Microsoft Azure PowerShell - Traffic Manager service cmdlets for Azure Resource Manage...
+1.9.0                Az.Websites                         PSGallery            Microsoft Azure PowerShell - App Service (Web Apps) service cmdlets for Azure Resource...
+
+
+PS C:\WINDOWS\system32> if ($PSVersionTable.PSEdition -eq 'Desktop' -and (Get-Module -Name AzureRM -ListAvailable)) {
+>>     Write-Warning -Message ('Az module not installed. Having both the AzureRM and ' +
+>>       'Az modules installed at the same time is not supported.')
+>> } else {
+>>     Install-Module -Name Az -AllowClobber -Scope CurrentUser
+>> }
+
+Untrusted repository
+You are installing the modules from an untrusted repository. If you trust this repository, change its InstallationPolicy value by running the Set-PSRepository cmdlet.
+Are you sure you want to install the modules from 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+PS C:\WINDOWS\system32> Get-ExecutionPolicy
+Bypass
+PS C:\WINDOWS\system32> Set-ExecutionPolicy
+
+cmdlet Set-ExecutionPolicy at command pipeline position 1
+Supply values for the following parameters:
+ExecutionPolicy:
+PS C:\WINDOWS\system32>
+
+PS C:\Users\uenou\Codes\asdk> $templateFile = ".\FGT-APHA_marketplace_org.json"
+
+PS C:\Users\uenou\Codes\asdk> Get-AzMarketplaceTerms
+
+cmdlet Get-AzMarketplaceTerms at command pipeline position 1
+Supply values for the following parameters:
+(Type !? for Help.)
+Publisher: fortinet
+Product: fortinet_fortigate-vm_v5
+Name: fortinet_fg-vm
+
+
+Publisher         : fortinet
+Product           : fortinet_fortigate-vm_v5
+Plan              : fortinet_fg-vm
+LicenseTextLink   : https://storelegalterms.blob.core.windows.net/legalterms/3E5ED_legalterms_FORTINET%253a24FORTINET%253a5FFORTIGATE%253a2DVM%253a5FV5%253a24FORTINET%
+                    253a5FFG%253a2DVM%253a243YMMPVYGBMICVRJW7QKJ3IBZAC4YGLA4OY4DGJ2WK6SM2CDQ3QD3JCPY2UTR5BJAS43OEKEEMBHADH2SWB336HPI23ULY5Y3S46S3YY.txt
+PrivacyPolicyLink : https://www.fortinet.com/corporate/about-us/privacy
+Signature         : I3KTWOUFWIDPJSBFR56SRLLKO6JXD4TJJLSLHWGO7KZC2TDUVRAGQNYID6VBYZMTRTSO7EMHNFZLLZWSY56HKB7WNMRDLERWEV2CH3A
+Accepted          : False
+Signdate          : 10/8/2020 4:07:45 AM
+
+
+
+PS C:\Users\uenou\Codes\asdk>
+PS C:\Users\uenou\Codes\asdk> Get-AzMarketplaceTerms -Publisher "fortinet" -Product "fortinet_fortigate-vm_v5" -Name "fortinet_fg-vm" | Set-AzMarketplaceTerms -Accept
+
+
+Publisher         : fortinet
+Product           : fortinet_fortigate-vm_v5
+Plan              : fortinet_fg-vm
+LicenseTextLink   : https://storelegalterms.blob.core.windows.net/legalterms/3E5ED_legalterms_FORTINET%253a24FORTINET%253a5FFORTIGATE%253a2DVM%253a5FV5%253a24FORTINET%
+                    253a5FFG%253a2DVM%253a243YMMPVYGBMICVRJW7QKJ3IBZAC4YGLA4OY4DGJ2WK6SM2CDQ3QD3JCPY2UTR5BJAS43OEKEEMBHADH2SWB336HPI23ULY5Y3S46S3YY.txt
+PrivacyPolicyLink : https://www.fortinet.com/corporate/about-us/privacy
+Signature         : UERRIVENDRVPCTQWJPH7T2N6D7D7TGWRO7TJTODHBRIN2EHOG465QUQXQ3EGD36PJEY67J2U4TTMJXRBYXN7Y72WI5AN63DN324DJBY
+Accepted          : True
+Signdate          : 10/8/2020 4:13:17 AM
+
+Reference - https://docs.microsoft.com/en-us/powershell/module/azurerm.marketplaceordering/?view=azurermps-6.13.0
+
+
+New-AzResourceGroupDeployment `
+  -Name fgthadeploy `
+  -ResourceGroupName MyResourceGroup `
+  -TemplateFile $templateFile `
+  -location "westus" `
+  -FortiGateVersion "6.2.5" `
+  -FortiGateNamePrefix "FGHA" `
+  -publicIPNewOrExisting "new" `
+  -publicIP2NewOrExisting "new" `
+  -publicIP3NewOrExisting "new" `
+  -publicIPAddressName "FGTAPClusterPublicIP" `
+  -publicIPAddressResourceGroup "MyResourceGroup" `
+  -publicIPAddress2Name "FGTAMgmtPublicIP" `
+  -publicIPAddress2ResourceGroup "MyResourceGroup" `
+  -publicIPAddress3Name "FGTBMgmtPublicIP" `
+  -publicIPAddress3ResourceGroup "MyResourceGroup" `
+  -publicIPAddressType "Static" `
+  -vnetNewOrExisting "new" `
+  -vnetName "FGHAVnet" `
+  -vnetResourceGroup "MyResourceGroup" `
+  -vnetAddressPrefix "10.2.0.0/16" `
+  -Subnet1Name "EntrySubnet" `
+  -Subnet1Prefix "10.2.1.0/24" `
+  -Subnet2Name "TransitSubnet" `
+  -Subnet2Prefix "10.2.2.0/24" `
+  -FGT-A-IP-Subnet2 "10.2.2.4" `
+  -Subnet3Name "HASyncSubnet" `
+  -Subnet3Prefix "10.2.3.0/28" `
+  -Subnet4Name "ManagementSubnet" `
+  -Subnet4Prefix "10.2.4.0/28" `
+  -Subnet5Name "ProtectedSubnet" `
+  -Subnet5Prefix "10.2.5.0/24" `
+  -Debug `
+  -Verbose
+
+https://docs.fortinet.com/vm/azure/fortigate/6.2/azure-cookbook/6.2.0/948968/creating-an-azure-fabric-connector-using-service-principal
+config system sdn-connector 
+    edit "AZConnector"      
+        set type azure      
+        set ha-status enable
+        set tenant-id "7c43a001-e22c-418b-9be5-e57ff3a37fc3"
+        set subscription-id "275097b5-42b6-4b93-b7f3-967d13844979"
+        set client-id "ad3420e9-6d50-4685-80c2-e61f579dff30"
+        set client-secret ENC 9R3x/BTpSh8VS/RRuZKtA50R3L1y5cTwYfyZoWx7n39oq/Djb73ipltfcZTXgTOqk7+HDP6yJyfBstjdL1i1ZO1ZVZU/CM3I99fvXgyEWmK0DjiF+oLm/BsuWD/nRowfbmENb1LT61+dyHoFnUYzdh+vVJtLBZc8AjsONWVSG3O9aicg9wpb9LrcKLSkEjze1dQjvw==
+        set resource-group "MyResourceGroup"
+        config nic
+            edit "FGHA-A-Nic1"
+                config ip
+                    edit "ipconfig1"
+                        set public-ip "FGTAPClusterPublicIP"
+                    next
+                end
+            next
+        end
+        config route-table
+            edit "FGTDefaultAPRouteTable"
+                config route
+                    edit "toDefault"
+                        set next-hop "10.2.2.4"
+                    next
+                end
+            next
+        end
+    next
+end
