@@ -1,0 +1,364 @@
+di de app azd -1
+Debug messages will be on for 30 minutes.
+
+FGHA-A # di de app shatalk -1
+Debug messages will be on for 30 minutes.
+
+FGHA-A # di de console timestamp enable 
+
+FGHA-A # di de en
+
+FGHA-A # 2020-10-08 19:09:24 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164747/1602209364
+2020-10-08 19:09:24 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:09:24 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:09:34 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164747/1602209374
+2020-10-08 19:09:34 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:09:34 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:09:44 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164747/1602209384
+2020-10-08 19:09:44 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:09:44 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:09:54 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164747/1602209394
+2020-10-08 19:09:54 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:09:54 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:09:58 azd sdn connector AZConnector prepare to update
+2020-10-08 19:09:58 azd sdn connector AZConnector start updater process 6827
+2020-10-08 19:09:58 azd sdn connector AZConnector start updating
+2020-10-08 19:09:59 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:09:59 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:09:59 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:09:59 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:09:59 azd reap child pid: 6827
+2020-10-08 19:10:04 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164747/1602209404
+2020-10-08 19:10:04 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 1
+2020-10-08 19:10:04 <hatalk> vcluster_0: pingsvr_failure_value/threshold=1/0
+2020-10-08 19:10:04 <hatalk> vcluster_0: reset time, pingsvr-fail
+2020-10-08 19:10:04 <hatalk> cfg_changed is set to 1: pingsvr-fail
+2020-10-08 19:10:04 <hatalk> vcluster_0: reelect=1, pingsvr-fail
+2020-10-08 19:10:04 <hatalk> cfg_changed is set to 1: master-check-pingsvr
+2020-10-08 19:10:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:10:04 <hatalk> vcluster_0: 'FGVM04TM20006163' is elected as the cluster master of 2 members
+2020-10-08 19:10:04 <hatalk> vcluster_0: state changed, 2(work)->3(standby)
+2020-10-08 19:10:04 <hatalk> vcluster_0: work_as_slave
+2020-10-08 19:10:04 <hatalk> vcluster_0: start sending garps
+2020-10-08 19:10:04 <hatalk> vcluster_0: update state_change_time, work-as-salve
+2020-10-08 19:10:04 <hatalk> vcluster_0: unset flag HATALK_VMEMBER_F_CLAIM_AS_MASTER
+2020-10-08 19:10:04 <hatalk> vcluster_0: hatalk_send_all_arp, garps=5, pid-6831
+2020-10-08 19:10:04 <hatalk> cfg_changed is set to 1: hatalk_work_as_slave
+2020-10-08 19:10:04 <hatalk> vcluster_0: hatalk_update_vcluster_st, ha_mode=0x00130200
+2020-10-08 19:10:04 <hatalk> vcluster_0: Send vmsg nvdoms=1, len=20.
+2020-10-08 19:10:04 HA event
+2020-10-08 19:10:04 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:10:04 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:10:04 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=22
+2020-10-08 19:10:04 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:10:04 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=76
+2020-10-08 19:10:04 <hatalk> reap child 6830 (0)
+2020-10-08 19:10:04 <hatalk> reap child 6831 (0)
+2020-10-08 19:10:04 <hatalk> reap child 6833 (0)
+2020-10-08 19:10:04 <hatalk> reap child 6834 (0)
+2020-10-08 19:10:04 <hatalk> parse options for 'FGVM04TM20006163', packet_version=35
+2020-10-08 19:10:04 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:10:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006163' updated, override=1, usr_priority=100, mondev/pingsvr=0/0, uptime/reset_count=158324/0, flag=0x00000001
+2020-10-08 19:10:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:10:04 <hatalk> hatalk clear mgmt session total 10
+2020-10-08 19:10:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:10:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:10:04 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:10:04 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=23
+2020-10-08 19:10:04 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:10:04 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=76
+2020-10-08 19:10:04 <hatalk> reap child 6829 (0)
+2020-10-08 19:10:07 Become HA slave mode 2
+2020-10-08 19:10:12 <hatalk> vcluster_0: hatalk_send_all_arp, garps=4, pid-6840
+2020-10-08 19:10:12 <hatalk> reap child 6840 (0)
+2020-10-08 19:10:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209414
+2020-10-08 19:10:20 <hatalk> vcluster_0: hatalk_send_all_arp, garps=3, pid-6841
+2020-10-08 19:10:20 <hatalk> reap child 6841 (0)
+2020-10-08 19:10:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209424
+2020-10-08 19:10:28 <hatalk> vcluster_0: hatalk_send_all_arp, garps=2, pid-6842
+2020-10-08 19:10:28 <hatalk> reap child 6842 (0)
+2020-10-08 19:10:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209434
+2020-10-08 19:10:36 <hatalk> vcluster_0: hatalk_send_all_arp, garps=1, pid-6843
+2020-10-08 19:10:36 <hatalk> reap child 6843 (0)
+2020-10-08 19:10:44 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209444
+2020-10-08 19:10:54 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209454
+2020-10-08 19:10:58 azd running in slave mode, won't update
+2020-10-08 19:11:04 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209464
+2020-10-08 19:11:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209474
+2020-10-08 19:11:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209484
+2020-10-08 19:11:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209494
+2020-10-08 19:11:44 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209504
+2020-10-08 19:11:54 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209514
+2020-10-08 19:11:58 azd running in slave mode, won't update
+2020-10-08 19:12:05 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209525
+2020-10-08 19:12:15 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209535
+2020-10-08 19:12:25 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209545
+2020-10-08 19:12:35 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209555
+2020-10-08 19:12:45 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209565
+2020-10-08 19:12:55 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209575
+2020-10-08 19:12:58 azd running in slave mode, won't update
+2020-10-08 19:13:05 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209585
+2020-10-08 19:13:15 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209595
+2020-10-08 19:13:25 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209605
+2020-10-08 19:13:35 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209615
+2020-10-08 19:13:45 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209625
+2020-10-08 19:13:55 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209635
+2020-10-08 19:13:58 azd running in slave mode, won't update
+2020-10-08 19:14:05 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209645
+2020-10-08 19:14:16 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209656
+2020-10-08 19:14:26 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209666
+2020-10-08 19:14:36 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209676
+2020-10-08 19:14:46 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209686
+2020-10-08 19:14:56 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209696
+2020-10-08 19:14:58 azd running in slave mode, won't update
+2020-10-08 19:15:06 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209706
+2020-10-08 19:15:16 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209716
+2020-10-08 19:15:26 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209726
+2020-10-08 19:15:36 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209736
+2020-10-08 19:15:46 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209746
+2020-10-08 19:15:56 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209756
+2020-10-08 19:15:59 azd running in slave mode, won't update
+2020-10-08 19:16:06 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209766
+2020-10-08 19:16:17 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209777
+2020-10-08 19:16:27 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209787
+2020-10-08 19:16:37 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209797
+2020-10-08 19:16:47 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209807
+2020-10-08 19:16:57 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209817
+2020-10-08 19:16:59 azd running in slave mode, won't update
+2020-10-08 19:17:07 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209827
+2020-10-08 19:17:17 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209837
+2020-10-08 19:17:27 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209847
+2020-10-08 19:17:37 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209857
+2020-10-08 19:17:47 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209867
+2020-10-08 19:17:57 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209877
+2020-10-08 19:17:59 azd running in slave mode, won't update
+2020-10-08 19:18:07 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209887
+2020-10-08 19:18:17 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209897
+2020-10-08 19:18:27 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209907
+2020-10-08 19:18:37 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209917
+2020-10-08 19:18:48 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209928
+2020-10-08 19:18:58 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209938
+2020-10-08 19:18:59 azd running in slave mode, won't update
+2020-10-08 19:19:08 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209948
+2020-10-08 19:19:18 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209958
+2020-10-08 19:19:28 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209968
+2020-10-08 19:19:38 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209978
+2020-10-08 19:19:48 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209988
+2020-10-08 19:19:58 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602209998
+2020-10-08 19:19:59 azd running in slave mode, won't update
+2020-10-08 19:20:08 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602209404/1602210008
+2020-10-08 19:20:08 <hatalk> vcluster_0: pingsvr_failure_value reset to 0
+2020-10-08 19:20:08 <hatalk> cfg_changed is set to 1: slave-check-pingsvr
+2020-10-08 19:20:08 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:20:08 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=24
+2020-10-08 19:20:08 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:20:08 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=76
+2020-10-08 19:20:08 <hatalk> parse options for 'FGVM04TM20006163', packet_version=36
+2020-10-08 19:20:08 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:20:08 <hatalk> vcluster_0: vmember 'FGVM04TM20006163' updated, override=1, usr_priority=100, mondev/pingsvr=0/0, uptime/reset_count=158324/0, flag=0x00000000
+2020-10-08 19:20:08 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:20:08 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:20:08 <hatalk> vcluster_0: 'FGVM04TM20006162' is elected as the cluster master of 2 members
+2020-10-08 19:20:08 <hatalk> vcluster_0: state changed, 3(standby)->2(work)
+2020-10-08 19:20:08 <hatalk> vcluster_0: work_as_master immediately
+2020-10-08 19:20:08 <hatalk> vcluster_0: start sending garps
+2020-10-08 19:20:08 <hatalk> vcluster_0: set flag HATALK_VMEMBER_F_CLAIM_AS_MASTER
+2020-10-08 19:20:08 <hatalk> vcluster_0: hatalk_send_all_arp, garps=5, pid-6858
+2020-10-08 19:20:08 <hatalk> cfg_changed is set to 1: hatalk_work_as_master
+2020-10-08 19:20:08 <hatalk> vcluster_0: update state_change_time, work-as-master
+2020-10-08 19:20:08 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.4
+2020-10-08 19:20:08 2020-10-08 19:20:08 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.4
+2020-10-08 19:20:08 <hatalk> vcluster_0: Send vmsg nvdoms=1, len=20.
+2020-10-08 19:20:08 HA event
+2020-10-08 19:20:08 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:20:08 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=25
+2020-10-08 19:20:08 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:20:08 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=76
+2020-10-08 19:20:08 <hatalk> reap child 6857 (0)
+2020-10-08 19:20:08 <hatalk> reap child 6858 (0)
+2020-10-08 19:20:08 <hatalk> reap child 6861 (0)
+2020-10-08 19:20:08 <hatalk> reap child 6862 (0)
+2020-10-08 19:20:08 <hatalk> parse options for 'FGVM04TM20006163', packet_version=37
+2020-10-08 19:20:08 <hatalk> vcluster_0: vmember 'FGVM04TM20006163' updated, override=1, usr_priority=100, mondev/pingsvr=0/0, uptime/reset_count=158324/0, flag=0x00000000
+2020-10-08 19:20:08 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:20:08 <hatalk> hatalk clear mgmt session total 9
+2020-10-08 19:20:08 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:20:08 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:20:08 <hatalk> reap child 6856 (0)
+2020-10-08 19:20:11 Become HA master mode 2
+2020-10-08 19:20:11 azd sdn connector AZConnector getting token
+2020-10-08 19:20:12 token size:1594
+2020-10-08 19:20:12 token expire on:1602213612
+2020-10-08 19:20:12 resourcegroup:MyResourceGroup, sub:f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:20:12 get pubip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 19:20:12 found pub ip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 19:20:12 id /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-B-Nic1/ipConfigurations/ipconfig1
+2020-10-08 19:20:12 remove public ip in nic FGHA-B-Nic1
+2020-10-08 19:20:13 result:0
+2020-10-08 19:20:13 remove public ip FGTAPClusterPublicIP in ipconfig ipconfig1
+2020-10-08 19:20:13 updating nic:FGHA-B-Nic1
+2020-10-08 19:20:13 result:0
+2020-10-08 19:20:13 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/889953b3-6045-47ac-9ac7-0bd0745a0e9e?api-version=2015-06-15
+2020-10-08 19:20:13 result:200
+2020-10-08 19:20:13 {
+  "status": "InProgress"
+}
+2020-10-08 19:20:13 status:InProgress
+2020-10-08 19:20:16 <hatalk> vcluster_0: hatalk_send_all_arp, garps=4, pid-6866
+2020-10-08 19:20:16 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.4
+2020-10-08 19:20:16 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.4
+2020-10-08 19:20:16 <hatalk> reap child 6866 (0)
+2020-10-08 19:20:18 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210018
+2020-10-08 19:20:24 <hatalk> vcluster_0: hatalk_send_all_arp, garps=3, pid-6868
+2020-10-08 19:20:24 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.4
+2020-10-08 19:20:24 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.4
+2020-10-08 19:20:24 <hatalk> reap child 6868 (0)
+2020-10-08 19:20:28 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210028
+2020-10-08 19:20:32 <hatalk> vcluster_0: hatalk_send_all_arp, garps=2, pid-6870
+2020-10-08 19:20:32 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.4
+2020-10-08 19:20:32 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.4
+2020-10-08 19:20:32 <hatalk> reap child 6870 (0)
+2020-10-08 19:20:33 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/889953b3-6045-47ac-9ac7-0bd0745a0e9e?api-version=2015-06-15
+2020-10-08 19:20:34 result:200
+2020-10-08 19:20:34 {
+  "status": "InProgress"
+}
+2020-10-08 19:20:34 status:InProgress
+2020-10-08 19:20:38 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210038
+2020-10-08 19:20:40 <hatalk> vcluster_0: hatalk_send_all_arp, garps=1, pid-6872
+2020-10-08 19:20:40 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.4
+2020-10-08 19:20:40 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.4
+2020-10-08 19:20:40 <hatalk> reap child 6872 (0)
+2020-10-08 19:20:48 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210048
+2020-10-08 19:20:54 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/889953b3-6045-47ac-9ac7-0bd0745a0e9e?api-version=2015-06-15
+2020-10-08 19:20:54 result:200
+2020-10-08 19:20:54 {
+  "status": "InProgress"
+}
+2020-10-08 19:20:54 status:InProgress
+2020-10-08 19:20:58 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210058
+2020-10-08 19:21:08 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210068
+2020-10-08 19:21:14 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/889953b3-6045-47ac-9ac7-0bd0745a0e9e?api-version=2015-06-15
+2020-10-08 19:21:14 result:200
+2020-10-08 19:21:14 {
+  "status": "InProgress"
+}
+2020-10-08 19:21:14 status:InProgress
+2020-10-08 19:21:19 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210079
+2020-10-08 19:21:29 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210089
+2020-10-08 19:21:34 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/889953b3-6045-47ac-9ac7-0bd0745a0e9e?api-version=2015-06-15
+2020-10-08 19:21:34 result:200
+2020-10-08 19:21:34 {
+  "status": "InProgress"
+}
+2020-10-08 19:21:34 status:InProgress
+2020-10-08 19:21:39 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210099
+2020-10-08 19:21:49 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210109
+2020-10-08 19:21:54 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/889953b3-6045-47ac-9ac7-0bd0745a0e9e?api-version=2015-06-15
+2020-10-08 19:21:54 result:200
+2020-10-08 19:21:54 {
+  "status": "InProgress"
+}
+2020-10-08 19:21:54 status:InProgress
+2020-10-08 19:21:59 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210119
+2020-10-08 19:22:09 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210129
+2020-10-08 19:22:14 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/889953b3-6045-47ac-9ac7-0bd0745a0e9e?api-version=2015-06-15
+2020-10-08 19:22:14 result:200
+2020-10-08 19:22:14 {
+  "status": "Succeeded"
+}
+2020-10-08 19:22:14 status:Succeeded
+2020-10-08 19:22:14 end wait:0
+2020-10-08 19:22:14 remove is done 0
+2020-10-08 19:22:14 add public ip in nic FGHA-A-Nic1
+2020-10-08 19:22:14 result:0
+2020-10-08 19:22:14 add public ip FGTAPClusterPublicIP in ipconfig ipconfig1
+2020-10-08 19:22:14 updating nic:FGHA-A-Nic1
+2020-10-08 19:22:15 result:0
+2020-10-08 19:22:15 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/cd7a9cbc-4922-425e-a6b2-c565acbd6624?api-version=2015-06-15
+2020-10-08 19:22:15 result:200
+2020-10-08 19:22:15 {
+  "status": "InProgress"
+}
+2020-10-08 19:22:15 status:InProgress
+2020-10-08 19:22:19 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210139
+2020-10-08 19:22:29 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210149
+2020-10-08 19:22:35 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/cd7a9cbc-4922-425e-a6b2-c565acbd6624?api-version=2015-06-15
+2020-10-08 19:22:35 result:200
+2020-10-08 19:22:35 {
+  "status": "InProgress"
+}
+2020-10-08 19:22:35 status:InProgress
+2020-10-08 19:22:39 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210159
+2020-10-08 19:22:49 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210169
+2020-10-08 19:22:55 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/cd7a9cbc-4922-425e-a6b2-c565acbd6624?api-version=2015-06-15
+2020-10-08 19:22:55 result:200
+2020-10-08 19:22:55 {
+  "status": "InProgress"
+}
+2020-10-08 19:22:55 status:InProgress
+2020-10-08 19:22:59 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210179
+2020-10-08 19:23:09 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210189
+2020-10-08 19:23:15 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/cd7a9cbc-4922-425e-a6b2-c565acbd6624?api-version=2015-06-15
+2020-10-08 19:23:15 result:200
+2020-10-08 19:23:15 {
+  "status": "InProgress"
+}
+2020-10-08 19:23:15 status:InProgress
+2020-10-08 19:23:20 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210200
+2020-10-08 19:23:30 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210210
+2020-10-08 19:23:35 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/cd7a9cbc-4922-425e-a6b2-c565acbd6624?api-version=2015-06-15
+2020-10-08 19:23:35 result:200
+2020-10-08 19:23:35 {
+  "status": "InProgress"
+}
+2020-10-08 19:23:35 status:InProgress
+2020-10-08 19:23:40 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210220
+2020-10-08 19:23:50 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210230
+2020-10-08 19:23:55 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/cd7a9cbc-4922-425e-a6b2-c565acbd6624?api-version=2015-06-15
+2020-10-08 19:23:56 result:200
+2020-10-08 19:23:56 {
+  "status": "InProgress"
+}
+2020-10-08 19:23:56 status:InProgress
+2020-10-08 19:24:00 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210240
+2020-10-08 19:24:10 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210250
+2020-10-08 19:24:16 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/cd7a9cbc-4922-425e-a6b2-c565acbd6624?api-version=2015-06-15
+2020-10-08 19:24:16 result:200
+2020-10-08 19:24:16 {
+  "status": "Succeeded"
+}
+2020-10-08 19:24:16 status:Succeeded
+2020-10-08 19:24:16 end wait:0
+2020-10-08 19:24:16 get route table FGTDefaultAPRouteTable in resource group MyResourceGroup
+2020-10-08 19:24:16 result:0
+2020-10-08 19:24:16 matching route:toDefault:toDefault
+2020-10-08 19:24:16 set route toDefault nexthop 10.2.2.4
+2020-10-08 19:24:16 updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup
+2020-10-08 19:24:16 result:0
+2020-10-08 19:24:16 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/8c93c451-328e-470b-8baf-2b655394e144?api-version=2015-06-15
+2020-10-08 19:24:16 result:200
+2020-10-08 19:24:16 {
+  "status": "InProgress"
+}
+2020-10-08 19:24:16 status:InProgress
+2020-10-08 19:24:20 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210260
+2020-10-08 19:24:30 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210270
+2020-10-08 19:24:36 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/8c93c451-328e-470b-8baf-2b655394e144?api-version=2015-06-15
+2020-10-08 19:24:36 result:200
+2020-10-08 19:24:36 {
+  "status": "Succeeded"
+}
+2020-10-08 19:24:36 status:Succeeded
+2020-10-08 19:24:36 end wait:0
+2020-10-08 19:24:36 nexthop and add is done
+2020-10-08 19:24:36 azd sdn connector AZConnector prepare to update
+2020-10-08 19:24:36 azd sdn connector AZConnector start updating
+2020-10-08 19:24:36 azd sdn connector AZConnector start updater process 6878
+2020-10-08 19:24:37 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:24:37 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:24:37 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:24:37 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:24:37 azd reap child pid: 6878
+2020-10-08 19:24:40 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210280
+2020-10-08 19:24:50 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210290
