@@ -1,0 +1,175 @@
+
+FGHA-B # get sys ha stat
+HA Health Status: OK
+Model: FortiGate-VM64-AZURE
+Mode: HA A-P
+Group: 0
+Debug: 0
+Cluster Uptime: 0 days 1:22:16
+Cluster state change time: 2020-10-08 02:54:23
+Master selected using:
+    <2020/10/08 02:54:23> FGVM04TM20006371 is selected as the master because it has the largest value of override priority.
+ses_pickup: enable, ses_pickup_delay=disable
+override: enable
+unicast_hb: peerip=10.2.3.4, myip=10.2.3.5, hasync_port='port3'
+Configuration Status:
+    FGVM04TM20006372(updated 1 seconds ago): in-sync
+    FGVM04TM20006371(updated 4 seconds ago): in-sync
+System Usage stats:
+    FGVM04TM20006372(updated 1 seconds ago):
+        sessions=0, average-cpu-user/nice/system/idle=0%/0%/0%/100%, memory=14%
+    FGVM04TM20006371(updated 4 seconds ago):
+        sessions=30, average-cpu-user/nice/system/idle=0%/0%/0%/100%, memory=14%
+HBDEV stats:
+    FGVM04TM20006372(updated 1 seconds ago):
+        port3: physical/40000full, up, rx-bytes/packets/dropped/errors=273851/763/0/0, tx=121664/477/0/0
+    FGVM04TM20006371(updated 4 seconds ago):
+        port3: physical/40000full, up, rx-bytes/packets/dropped/errors=547658/1683/0/0, tx=495199/1444/0/0
+Slave : FGHA-B          , FGVM04TM20006372, HA cluster index = 0
+Master: FGHA-A          , FGVM04TM20006371, HA cluster index = 1
+number of vcluster: 1
+vcluster 1: standby 10.2.3.4
+Slave : FGVM04TM20006372, HA operating index = 1
+Master: FGVM04TM20006371, HA operating index = 0
+
+FGHA-B # di de slave's external files are not in sync with master, sequence:2. (type CERT_LOCAL)
+app zad -1
+command parse error before 'zad'
+
+FGHA-B # di de app azd -1
+Debug messages will be on for 30 minutes.
+
+FGHA-B # di de console timestamp enable
+
+FGHA-B # d 2020-10-08 02:55:25 azd running in slave mode, won't update
+i de 2020-10-08 02:55:28 slave's external files are not in sync with master, sequence:3. (type CERT_LOCAL)
+en
+
+FGHA-B #
+FGHA-B # 2020-10-08 02:55:43 slave's external files are not in sync with master, sequence:4. (type CERT_LOCAL)
+2020-10-08 02:56:13 slave succeeded to sync external files with master
+2020-10-08 02:56:25 azd running in slave mode, won't update
+2020-10-08 02:57:12 HA event
+2020-10-08 02:57:15 HA state: master
+2020-10-08 02:57:15 azd sdn connector AZConnector getting token
+2020-10-08 02:57:16 token size:1268
+2020-10-08 02:57:16 token expire on:1602154635
+2020-10-08 02:57:16 resourcegroup: MyResourceGroup, sub: 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 02:57:16 get pubip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 02:57:16 found pub ip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 02:57:16 ipconfig id: /subscriptions/275097b5-42b6-4b93-b7f3-967d13844979/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1/ipConfigurations/ipconfig1
+2020-10-08 02:57:16 removing pubip
+2020-10-08 02:57:16 query nic FGHA-A-Nic1
+2020-10-08 02:57:16 query nic FGHA-A-Nic1, rc: 0
+2020-10-08 02:57:16 remove public ip FGTAPClusterPublicIP in ipconfig ipconfig1 of nic FGHA-A-Nic1
+2020-10-08 02:57:16 updating nic: FGHA-A-Nic1
+2020-10-08 02:57:16 updating nic: FGHA-A-Nic1, rc: 0
+2020-10-08 02:57:16 operation: "updating nic: FGHA-A-Nic1", status: InProgress
+2020-10-08 02:57:26 operation: "updating nic: FGHA-A-Nic1", status: InProgress
+2020-10-08 02:57:36 operation: "updating nic: FGHA-A-Nic1", status: InProgress
+2020-10-08 02:57:46 operation: "updating nic: FGHA-A-Nic1", status: InProgress
+2020-10-08 02:57:57 operation: "updating nic: FGHA-A-Nic1", status: InProgress
+2020-10-08 02:58:07 operation: "updating nic: FGHA-A-Nic1", status: InProgress
+2020-10-08 02:58:17 operation: "updating nic: FGHA-A-Nic1", status: InProgress
+2020-10-08 02:58:27 operation: "updating nic: FGHA-A-Nic1", status: Succeeded
+2020-10-08 02:58:27 adding pubip
+2020-10-08 02:58:27 query nic FGHA-B-Nic1
+2020-10-08 02:58:27 query nic FGHA-B-Nic1, rc: 0
+2020-10-08 02:58:27 add public ip FGTAPClusterPublicIP in ipconfig ipconfig1 of nic FGHA-B-Nic1
+2020-10-08 02:58:27 updating nic: FGHA-B-Nic1
+2020-10-08 02:58:27 updating nic: FGHA-B-Nic1, rc: 0
+2020-10-08 02:58:27 operation: "updating nic: FGHA-B-Nic1", status: Succeeded
+2020-10-08 02:58:27 query route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 02:58:27 route table query, rc: 0
+2020-10-08 02:58:27 matching route:toDefault:toDefault
+2020-10-08 02:58:27 set route toDefault nexthop 10.2.2.5
+2020-10-08 02:58:27 updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 02:58:27 updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979, rc: 0
+2020-10-08 02:58:27 operation: "updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979", status: Succeeded
+2020-10-08 02:58:27 azd sdn connector AZConnector prepare to update
+2020-10-08 02:58:27 azd sdn connector AZConnector getting token
+2020-10-08 02:58:28 token size:1268
+2020-10-08 02:58:28 token expire on:1602154708
+2020-10-08 02:58:28 azd sdn connector AZConnector start updater process 301
+2020-10-08 02:58:28 HA state: master
+2020-10-08 02:58:28 azd sdn connector AZConnector getting token
+2020-10-08 02:58:28 azd sdn connector AZConnector start updating
+2020-10-08 02:58:28 token size:1268
+2020-10-08 02:58:28 token expire on:1602154708
+2020-10-08 02:58:28 resourcegroup: MyResourceGroup, sub: 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 02:58:28 get pubip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 02:58:28 found pub ip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 02:58:28 ipconfig id: /subscriptions/275097b5-42b6-4b93-b7f3-967d13844979/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-B-Nic1/ipConfigurations/ipconfig1
+2020-10-08 02:58:28 nic FGHA-B-Nic1 ipconfig ipconfig1 already has public ip FGTAPClusterPublicIP from resource group MyResourceGroup
+2020-10-08 02:58:28 query route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 02:58:28 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 02:58:28 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 02:58:28 route table query, rc: 0
+2020-10-08 02:58:28 matching route:toDefault:toDefault
+2020-10-08 02:58:28 route toDefault already has nexthop 10.2.2.5
+2020-10-08 02:58:28 no route needs to be updated
+2020-10-08 02:58:28 azd reap child pid: 301
+2020-10-08 02:59:28 azd sdn connector AZConnector prepare to update
+2020-10-08 02:59:28 azd sdn connector AZConnector start updater process 304
+2020-10-08 02:59:28 azd sdn connector AZConnector start updating
+2020-10-08 02:59:28 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 02:59:28 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 02:59:28 azd reap child pid: 304
+2020-10-08 03:00:18 HA event
+2020-10-08 03:00:21 HA state: slave
+2020-10-08 03:00:27 azd running in slave mode, won't update
+2020-10-08 03:00:40 HA state: slave
+2020-10-08 03:01:27 azd running in slave mode, won't update
+2020-10-08 03:02:27 azd running in slave mode, won't update
+
+
+
+
+GHA-A # di de app azd -1
+Debug messages will be on for 30 minutes.
+
+FGHA-A # di de console timestamp enable operation: "updating nic: FGHA-B-Nic1", status: InProgress
+
+
+FGHA-A # di de en
+
+FGHA-A # 2020-10-08 03:00:42 operation: "updating nic: FGHA-B-Nic1", status: InProgress
+2020-10-08 03:00:52 operation: "updating nic: FGHA-B-Nic1", status: InProgress
+2020-10-08 03:01:02 operation: "updating nic: FGHA-B-Nic1", status: InProgress
+2020-10-08 03:01:12 operation: "updating nic: FGHA-B-Nic1", status: InProgress
+2020-10-08 03:01:22 operation: "updating nic: FGHA-B-Nic1", status: Succeeded
+2020-10-08 03:01:22 adding pubip
+2020-10-08 03:01:22 query nic FGHA-A-Nic1
+2020-10-08 03:01:22 query nic FGHA-A-Nic1, rc: 0
+2020-10-08 03:01:22 add public ip FGTAPClusterPublicIP in ipconfig ipconfig1 of nic FGHA-A-Nic1
+2020-10-08 03:01:22 updating nic: FGHA-A-Nic1
+2020-10-08 03:01:22 updating nic: FGHA-A-Nic1, rc: 0
+2020-10-08 03:01:22 operation: "updating nic: FGHA-A-Nic1", status: Succeeded
+2020-10-08 03:01:22 query route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 03:01:22 route table query, rc: 0
+2020-10-08 03:01:22 matching route:toDefault:toDefault
+2020-10-08 03:01:22 set route toDefault nexthop 10.2.2.4
+2020-10-08 03:01:22 updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 03:01:23 updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979, rc: 0
+2020-10-08 03:01:23 operation: "updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979", status: Succeeded
+2020-10-08 03:01:23 azd reap child pid: 257
+2020-10-08 03:01:23 HA state: master
+2020-10-08 03:01:23 azd sdn connector AZConnector getting token
+2020-10-08 03:01:23 token size:1268
+2020-10-08 03:01:23 token expire on:1602154884
+2020-10-08 03:01:23 resourcegroup: MyResourceGroup, sub: 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 03:01:23 get pubip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 03:01:23 found pub ip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 03:01:23 ipconfig id: /subscriptions/275097b5-42b6-4b93-b7f3-967d13844979/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1/ipConfigurations/ipconfig1
+2020-10-08 03:01:23 nic FGHA-A-Nic1 ipconfig ipconfig1 already has public ip FGTAPClusterPublicIP from resource group MyResourceGroup
+2020-10-08 03:01:23 query route table FGTDefaultAPRouteTable in resource group MyResourceGroup of subscription 275097b5-42b6-4b93-b7f3-967d13844979
+2020-10-08 03:01:23 route table query, rc: 0
+2020-10-08 03:01:23 matching route:toDefault:toDefault
+2020-10-08 03:01:23 route toDefault already has nexthop 10.2.2.4
+2020-10-08 03:01:23 no route needs to be updated
+2020-10-08 03:01:23 azd sdn connector AZConnector prepare to update
+2020-10-08 03:01:23 azd sdn connector AZConnector start updater process 274
+azd sdn connector AZConnector start updating
+2020-10-08 03:01:24 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 03:01:24 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 03:01:24 azd reap child pid: 274
