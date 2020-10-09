@@ -1,0 +1,890 @@
+2020-10-08 19:25:32 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210008/1602210332
+2020-10-08 19:25:33 azd running in slave mode, won't update
+2020-10-08 19:25:42 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210008/1602210342
+2020-10-08 19:25:52 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210008/1602210352
+2020-10-08 19:26:00 <hatalk> parse options for 'FGVM04TM20006162', packet_version=26
+2020-10-08 19:26:00 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:26:00 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000021
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:00 <hatalk> vcluster_0: 'FGVM04TM20006163' is elected as the cluster master of 2 members
+2020-10-08 19:26:00 <hatalk> vcluster_0: state changed, 3(standby)->2(work)
+2020-10-08 19:26:00 <hatalk> vcluster_0: delay work_as_master in timer
+2020-10-08 19:26:00 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:26:00 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=38
+2020-10-08 19:26:00 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:26:00 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 19:26:00 <hatalk> reap child 3886 (0)
+2020-10-08 19:26:00 <hatalk> reap child 3887 (0)
+2020-10-08 19:26:00 <hatalk> parse options for 'FGVM04TM20006162', packet_version=27
+2020-10-08 19:26:00 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:26:00 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:00 <hatalk> vcluster_0: 'FGVM04TM20006163' is elected as the cluster master of 2 members
+2020-10-08 19:26:00 <hatalk> vcluster_0: state changed, 2(work)->2(work)
+2020-10-08 19:26:00 <hatalk> vcluster_0: work_as_master immediately
+2020-10-08 19:26:00 <hatalk> vcluster_0: start sending garps
+2020-10-08 19:26:00 <hatalk> vcluster_0: set flag HATALK_VMEMBER_F_CLAIM_AS_MASTER
+2020-10-08 19:26:00 <hatalk> cfg_changed is set to 1: hatalk_work_as_master
+2020-10-08 19:26:00 <hatalk> hatalk clear mgmt session total 9
+2020-10-08 19:26:00 <hatalk> vcluster_0: hatalk_update_vcluster_st, ha_mode=0x00020200
+2020-10-08 19:26:00 <hatalk> vcluster_0: Send vmsg nvdoms=1, len=20.
+2020-10-08 19:26:00 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:26:00 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=39
+2020-10-08 19:26:00 HA event
+2020-10-08 19:26:00 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:26:00 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 19:26:00 <hatalk> reap child 3888 (0)
+2020-10-08 19:26:00 <hatalk> reap child 3889 (0)
+2020-10-08 19:26:00 <hatalk> parse options for 'FGVM04TM20006162', packet_version=28
+2020-10-08 19:26:00 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:00 <hatalk> vcluster_0: hatalk_send_all_arp, garps=5, pid-3890
+2020-10-08 19:26:00 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.5
+2020-10-08 19:26:00 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.5
+2020-10-08 19:26:00 <hatalk> parse options for 'FGVM04TM20006162', packet_version=29
+2020-10-08 19:26:00 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:00 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:00 <hatalk> reap child 3890 (0)
+2020-10-08 19:26:00 <hatalk> parse options for 'FGVM04TM20006162', packet_version=30
+2020-10-08 19:26:00 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:00 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:00 <hatalk> parse options for 'FGVM04TM20006162', packet_version=31
+2020-10-08 19:26:00 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:00 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:00 <hatalk> parse options for 'FGVM04TM20006162', packet_version=32
+2020-10-08 19:26:00 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:00 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=33
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=34
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=35
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=36
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=37
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=38
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=39
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=40
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=41
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=42
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=43
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=44
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=45
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=46
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=47
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=48
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=49
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=50
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=51
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:01 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:01 <hatalk> parse options for 'FGVM04TM20006162', packet_version=52
+2020-10-08 19:26:01 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:01 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=53
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=54
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=55
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=56
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=57
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=58
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=59
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=60
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210362
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=61
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=62
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=63
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=64
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=65
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=66
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=67
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=68
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=69
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=70
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=71
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=72
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:02 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:02 <hatalk> parse options for 'FGVM04TM20006162', packet_version=73
+2020-10-08 19:26:02 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:02 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=74
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=75
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=76
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=77
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=78
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=79
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=80
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=81
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=82
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=83
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=84
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=85
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=86
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=87
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 Become HA master mode 2
+2020-10-08 19:26:03 azd sdn connector AZConnector getting token
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=88
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=89
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=90
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=91
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=92
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:03 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:03 <hatalk> parse options for 'FGVM04TM20006162', packet_version=93
+2020-10-08 19:26:03 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:03 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=94
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=95
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=96
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=97
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=98
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=99
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=100
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=101
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=102
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=103
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=104
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=105
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=106
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=107
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=108
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 token size:1588
+2020-10-08 19:26:04 token expire on:1602213964
+2020-10-08 19:26:04 resourcegroup:MyResourceGroup, sub:f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:26:04 get pubip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=109
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=110
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=111
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 found pub ip FGTAPClusterPublicIP in resource group MyResourceGroup
+2020-10-08 19:26:04 id /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1/ipConfigurations/ipconfig1
+2020-10-08 19:26:04 remove public ip in nic FGHA-A-Nic1
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=112
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:04 <hatalk> parse options for 'FGVM04TM20006162', packet_version=113
+2020-10-08 19:26:04 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:04 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:04 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=114
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=115
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 result:0
+2020-10-08 19:26:05 remove public ip FGTAPClusterPublicIP in ipconfig ipconfig1
+2020-10-08 19:26:05 updating nic:FGHA-A-Nic1
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=116
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=117
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=118
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=119
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=120
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=121
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=122
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 result:0
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=123
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/6602b892-4b54-497a-ba3f-0b17576a735f?api-version=2015-06-15
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=124
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:05 <hatalk> parse options for 'FGVM04TM20006162', packet_version=125
+2020-10-08 19:26:05 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/4, flag=0x00000020
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:26:05 result:200
+2020-10-08 19:26:05 {
+  "status": "InProgress"
+}
+2020-10-08 19:26:05 status:InProgress
+2020-10-08 19:26:05 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:05 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:26:08 <hatalk> vcluster_0: hatalk_send_all_arp, garps=4, pid-3895
+2020-10-08 19:26:08 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.5
+2020-10-08 19:26:08 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.5
+2020-10-08 19:26:08 <hatalk> reap child 3895 (0)
+2020-10-08 19:26:09 <hatalk> member 'FGVM04TM20006162' lost heartbeat on hbdev 'port3': now=15928676, last_hb_jiffies+timeout=15928275+400=15928675
+2020-10-08 19:26:09 <hatalk> lost member 'FGVM04TM20006162' heartbeat, delete it
+2020-10-08 19:26:09 <hatalk> deleting gmember 'FGVM04TM20006162'
+2020-10-08 19:26:09 <hatalk> vcluster_0: deleting vmember 'FGVM04TM20006162'
+2020-10-08 19:26:09 <hatalk> vcluster_0: reelect=1, delete-vmember
+2020-10-08 19:26:09 <hatalk> cfg_changed is set to 1: hatalk_del_member
+2020-10-08 19:26:09 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:26:09 <hatalk> vcluster_0: 'FGVM04TM20006163' is elected as the cluster master of 1 members
+2020-10-08 19:26:09 <hatalk> vcluster_0: state changed, 2(work)->2(work)
+2020-10-08 19:26:09 <hatalk> vcluster_0: work_as_master immediately
+2020-10-08 19:26:09 <hatalk> vcluster_0: start sending garps
+2020-10-08 19:26:09 <hatalk> vcluster_0: hatalk_send_all_arp, garps=5, pid-3901
+2020-10-08 19:26:09 <hatalk> vcluster_0: hatalk_update_vcluster_st, ha_mode=0x00020200
+2020-10-08 19:26:09 <hatalk> vcluster_0: Send vmsg nvdoms=1, len=20.
+2020-10-08 19:26:09 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.5
+2020-10-08 19:26:09 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.5
+<hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:26:09 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=40
+2020-10-08 19:26:09 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:26:09 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 19:26:09 <hatalk> reap child 3897 (0)
+2020-10-08 19:26:09 <hatalk> reap child 3898 (0)
+2020-10-08 19:26:09 <hatalk> reap child 3901 (0)
+2020-10-08 19:26:09 <hatalk> hatalk clear mgmt session total 8
+2020-10-08 19:26:09 <hatalk> reap child 3904 (0)
+2020-10-08 19:26:09 <hatalk> reap child 3900 (0)
+2020-10-08 19:26:09 <hatalk> reap child 3903 (0)
+2020-10-08 19:26:09 <hatalk> reap child 3899 (0)
+2020-10-08 19:26:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210372
+2020-10-08 19:26:17 <hatalk> vcluster_0: hatalk_send_all_arp, garps=4, pid-3905
+2020-10-08 19:26:17 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.5
+2020-10-08 19:26:17 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.5
+2020-10-08 19:26:17 <hatalk> reap child 3905 (0)
+2020-10-08 19:26:22 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210382
+2020-10-08 19:26:25 <hatalk> vcluster_0: hatalk_send_all_arp, garps=3, pid-3907
+2020-10-08 19:26:25 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.5
+2020-10-08 19:26:25 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.5
+2020-10-08 19:26:25 <hatalk> reap child 3907 (0)
+2020-10-08 19:26:25 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/6602b892-4b54-497a-ba3f-0b17576a735f?api-version=2015-06-15
+2020-10-08 19:26:27 result:200
+2020-10-08 19:26:27 {
+  "status": "InProgress"
+}
+2020-10-08 19:26:27 status:InProgress
+2020-10-08 19:26:32 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210392
+2020-10-08 19:26:33 <hatalk> vcluster_0: hatalk_send_all_arp, garps=2, pid-3909
+2020-10-08 19:26:33 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.5
+2020-10-08 19:26:33 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.5
+2020-10-08 19:26:33 <hatalk> reap child 3909 (0)
+2020-10-08 19:26:41 <hatalk> vcluster_0: hatalk_send_all_arp, garps=1, pid-3912
+2020-10-08 19:26:41 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.5
+2020-10-08 19:26:41 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.5
+2020-10-08 19:26:41 <hatalk> reap child 3912 (0)
+2020-10-08 19:26:42 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210402
+2020-10-08 19:26:47 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/6602b892-4b54-497a-ba3f-0b17576a735f?api-version=2015-06-15
+2020-10-08 19:26:48 result:200
+2020-10-08 19:26:48 {
+  "status": "InProgress"
+}
+2020-10-08 19:26:48 status:InProgress
+2020-10-08 19:26:52 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210412
+2020-10-08 19:27:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210422
+2020-10-08 19:27:08 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/6602b892-4b54-497a-ba3f-0b17576a735f?api-version=2015-06-15
+2020-10-08 19:27:08 result:200
+2020-10-08 19:27:08 {
+  "status": "InProgress"
+}
+2020-10-08 19:27:08 status:InProgress
+2020-10-08 19:27:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210008/1602210432
+2020-10-08 19:27:21 <hatalk> parse options for 'FGVM04TM20006162', packet_version=1
+2020-10-08 19:27:21 <hatalk> new member 'FGVM04TM20006162' is added into group
+2020-10-08 19:27:21 <hatalk> [hatalk_gmember_update_last_hb_jiffies:201] recv first hb packet from 'FGVM04TM20006162' on hbdev='port3'
+2020-10-08 19:27:21 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/0, flag=0x00000001
+2020-10-08 19:27:21 <hatalk> cfg_changed is set to 1: hatalk_vcluster_add_vmember
+2020-10-08 19:27:21 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:27:21 <hatalk> reap child 3914 (0)
+2020-10-08 19:27:21 <hatalk> reap child 3915 (0)
+2020-10-08 19:27:21 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:27:21 <hatalk> vcluster_0: 'FGVM04TM20006162' is elected as the cluster master of 2 members
+2020-10-08 19:27:21 <hatalk> vcluster_0: state changed, 2(work)->3(standby)
+2020-10-08 19:27:21 <hatalk> vcluster_0: work_as_slave
+2020-10-08 19:27:21 <hatalk:ERRO> 'FGVM04TM20006162' is not found in vcluster_bk
+2020-10-08 19:27:21 <hatalk> vcluster_0: start sending garps
+2020-10-08 19:27:21 <hatalk> vcluster_0: update state_change_time, work-as-salve
+2020-10-08 19:27:21 <hatalk> vcluster_0: hatalk_send_all_arp, garps=5, pid-3919
+2020-10-08 19:27:21 <hatalk> hatalk clear mgmt session total 3
+2020-10-08 19:27:21 <hatalk> vcluster_0: unset flag HATALK_VMEMBER_F_CLAIM_AS_MASTER
+2020-10-08 19:27:21 <hatalk> cfg_changed is set to 1: hatalk_work_as_slave
+2020-10-08 19:27:21 <hatalk> vcluster_0: hatalk_update_vcluster_st, ha_mode=0x00130200
+2020-10-08 19:27:21 <hatalk> vcluster_0: Send vmsg nvdoms=1, len=20.
+2020-10-08 19:27:21 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:27:21 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:27:21 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=41
+2020-10-08 19:27:21 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:27:21 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 19:27:21 <hatalk> [hatalk_timer_func:990] need_set_haip=1
+2020-10-08 19:27:21 <hatalk> reap child 3916 (0)
+2020-10-08 19:27:21 <hatalk> reap child 3917 (0)
+2020-10-08 19:27:21 <hatalk> reap child 3919 (0)
+2020-10-08 19:27:21 <hatalk> reap child 3922 (0)
+2020-10-08 19:27:21 <hatalk> parse options for 'FGVM04TM20006162', packet_version=2
+2020-10-08 19:27:21 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:27:21 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/0, flag=0x00000001
+2020-10-08 19:27:21 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:27:22 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:27:22 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:27:22 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:27:22 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=42
+2020-10-08 19:27:22 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:27:22 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 19:27:22 <hatalk> reap child 3921 (0)
+2020-10-08 19:27:22 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210442
+2020-10-08 19:27:24 <hatalk> parse options for 'FGVM04TM20006162', packet_version=3
+2020-10-08 19:27:24 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 19:27:24 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/0, flag=0x00000001
+2020-10-08 19:27:24 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 19:27:24 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 19:27:24 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 19:27:24 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 19:27:24 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=43
+2020-10-08 19:27:24 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 19:27:24 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 19:27:28 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/6602b892-4b54-497a-ba3f-0b17576a735f?api-version=2015-06-15
+2020-10-08 19:27:29 <hatalk> vcluster_0: hatalk_send_all_arp, garps=4, pid-3925
+2020-10-08 19:27:29 <hatalk> reap child 3925 (0)
+2020-10-08 19:27:30 result:200
+2020-10-08 19:27:30 {
+  "status": "InProgress"
+}
+2020-10-08 19:27:30 status:InProgress
+2020-10-08 19:27:32 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210452
+2020-10-08 19:27:37 <hatalk> vcluster_0: hatalk_send_all_arp, garps=3, pid-3936
+2020-10-08 19:27:37 <hatalk> reap child 3936 (0)
+2020-10-08 19:27:43 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210463
+2020-10-08 19:27:45 <hatalk> vcluster_0: hatalk_send_all_arp, garps=2, pid-3938
+2020-10-08 19:27:45 <hatalk> reap child 3938 (0)
+2020-10-08 19:27:50 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/6602b892-4b54-497a-ba3f-0b17576a735f?api-version=2015-06-15
+2020-10-08 19:27:50 result:200
+2020-10-08 19:27:50 {
+  "status": "Canceled",
+  "error": {
+    "code": "Canceled",
+    "message": "Operation was canceled.",
+    "details": [
+      {
+        "code": "CanceledAndSupersededDueToAnotherOperation",
+        "message": "Operation PutNetworkInterfaceOperation (6602b892-4b54-497a-ba3f-0b17576a735f) was canceled and superseded by operation InternalOperation (f0b09e02-3508-41f7-9b70-60303a8edf1b)."
+      }
+    ]
+  }
+}
+2020-10-08 19:27:50 status:Canceled
+2020-10-08 19:27:50 end wait:200
+2020-10-08 19:27:50 updating nic:FGHA-A-Nic1
+2020-10-08 19:27:51 result:0
+2020-10-08 19:27:51 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/a4b67598-1c3d-408d-a04d-bbf733b3124a?api-version=2015-06-15
+2020-10-08 19:27:51 result:200
+2020-10-08 19:27:51 {
+  "status": "InProgress"
+}
+2020-10-08 19:27:51 status:InProgress
+2020-10-08 19:27:53 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210473
+2020-10-08 19:27:53 <hatalk> vcluster_0: hatalk_send_all_arp, garps=1, pid-3939
+2020-10-08 19:27:53 <hatalk> reap child 3939 (0)
+2020-10-08 19:28:03 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210483
+2020-10-08 19:28:11 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/a4b67598-1c3d-408d-a04d-bbf733b3124a?api-version=2015-06-15
+2020-10-08 19:28:11 result:200
+2020-10-08 19:28:11 {
+  "status": "Canceled",
+  "error": {
+    "code": "Canceled",
+    "message": "Operation was canceled.",
+    "details": [
+      {
+        "code": "CanceledAndSupersededDueToAnotherOperation",
+        "message": "Operation PutNetworkInterfaceOperation (a4b67598-1c3d-408d-a04d-bbf733b3124a) was canceled and superseded by operation InternalOperation (acfb0b6f-44e3-40ec-a609-f9fb94d1bd05)."
+      }
+    ]
+  }
+}
+2020-10-08 19:28:11 status:Canceled
+2020-10-08 19:28:11 end wait:200
+2020-10-08 19:28:11 updating nic:FGHA-A-Nic1
+2020-10-08 19:28:13 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210493
+2020-10-08 19:28:23 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210503
+2020-10-08 19:28:33 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210513
+2020-10-08 19:28:43 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210523
+2020-10-08 19:28:53 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210533
+2020-10-08 19:29:03 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210543
+2020-10-08 19:29:11 azd curl error:28
+2020-10-08 19:29:11 azd curl retry
+2020-10-08 19:29:13 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210553
+2020-10-08 19:29:23 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210563
+2020-10-08 19:29:33 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210573
+2020-10-08 19:29:43 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210583
+2020-10-08 19:29:53 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210593
+2020-10-08 19:30:04 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210604
+2020-10-08 19:30:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210614
+2020-10-08 19:30:16 azd curl error:28
+2020-10-08 19:30:16 azd curl retry
+2020-10-08 19:30:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210624
+2020-10-08 19:30:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210634
+2020-10-08 19:30:44 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210644
+2020-10-08 19:30:54 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210654
+2020-10-08 19:31:04 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210664
+2020-10-08 19:31:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210674
+2020-10-08 19:31:21 azd curl error:28
+2020-10-08 19:31:21 azd curl retry
+2020-10-08 19:31:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210684
+2020-10-08 19:31:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210694
+2020-10-08 19:31:44 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210704
+2020-10-08 19:31:54 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210714
+2020-10-08 19:32:04 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210724
+2020-10-08 19:32:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210734
+2020-10-08 19:32:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210744
+2020-10-08 19:32:26 azd curl error:28
+2020-10-08 19:32:26 rc=-28, 
+2020-10-08 19:32:26 result:-28
+2020-10-08 19:32:26 updating nic:FGHA-A-Nic1
+2020-10-08 19:32:26 rc=429, {
+  "error": {
+    "code": "RetryableError",
+    "message": "A retryable error occurred.",
+    "details": [
+      {
+        "code": "RetryableErrorDueToAnotherOperation",
+        "message": "Operation PutNetworkInterfaceOperation (59aa86aa-9500-4346-979b-f98e0d7da307) is updating resource /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1. The call can be retried in 12 seconds."
+      }
+    ]
+  }
+}
+2020-10-08 19:32:26 result:429
+2020-10-08 19:32:26 remove is done 0
+2020-10-08 19:32:26 add public ip in nic FGHA-B-Nic1
+2020-10-08 19:32:26 result:0
+2020-10-08 19:32:26 add public ip FGTAPClusterPublicIP in ipconfig ipconfig1
+2020-10-08 19:32:26 updating nic:FGHA-B-Nic1
+2020-10-08 19:32:27 rc=400, {
+  "error": {
+    "code": "PublicIPAddressInUse",
+    "message": "IP configuration /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-B-Nic1/ipConfigurations/ipconfig1 is referencing public IP address /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/publicIPAddresses/FGTAPClusterPublicIP that is already allocated to resource /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1.",
+    "details": []
+  }
+}
+2020-10-08 19:32:27 result:400
+2020-10-08 19:32:27 updating nic:FGHA-B-Nic1
+2020-10-08 19:32:27 rc=400, {
+  "error": {
+    "code": "PublicIPAddressInUse",
+    "message": "IP configuration /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-B-Nic1/ipConfigurations/ipconfig1 is referencing public IP address /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/publicIPAddresses/FGTAPClusterPublicIP that is already allocated to resource /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1.",
+    "details": []
+  }
+}
+2020-10-08 19:32:27 result:400
+2020-10-08 19:32:27 updating nic:FGHA-B-Nic1
+2020-10-08 19:32:27 rc=400, {
+  "error": {
+    "code": "PublicIPAddressInUse",
+    "message": "IP configuration /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-B-Nic1/ipConfigurations/ipconfig1 is referencing public IP address /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/publicIPAddresses/FGTAPClusterPublicIP that is already allocated to resource /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1.",
+    "details": []
+  }
+}
+2020-10-08 19:32:27 result:400
+2020-10-08 19:32:27 updating nic:FGHA-B-Nic1
+2020-10-08 19:32:27 rc=400, {
+  "error": {
+    "code": "PublicIPAddressInUse",
+    "message": "IP configuration /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-B-Nic1/ipConfigurations/ipconfig1 is referencing public IP address /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/publicIPAddresses/FGTAPClusterPublicIP that is already allocated to resource /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1.",
+    "details": []
+  }
+}
+2020-10-08 19:32:27 result:400
+2020-10-08 19:32:27 get route table FGTDefaultAPRouteTable in resource group MyResourceGroup
+2020-10-08 19:32:28 result:0
+2020-10-08 19:32:28 matching route:toDefault:toDefault
+2020-10-08 19:32:28 set route toDefault nexthop 10.2.2.5
+2020-10-08 19:32:28 updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup
+2020-10-08 19:32:28 result:0
+2020-10-08 19:32:28 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/33cef6d5-4912-4bab-8159-9cd2a5db6b32?api-version=2015-06-15
+2020-10-08 19:32:28 result:200
+2020-10-08 19:32:28 {
+  "status": "InProgress"
+}
+2020-10-08 19:32:28 status:InProgress
+2020-10-08 19:32:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210754
+2020-10-08 19:32:45 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210765
+2020-10-08 19:32:48 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/33cef6d5-4912-4bab-8159-9cd2a5db6b32?api-version=2015-06-15
+2020-10-08 19:32:48 result:200
+2020-10-08 19:32:48 {
+  "status": "Succeeded"
+}
+2020-10-08 19:32:48 status:Succeeded
+2020-10-08 19:32:48 end wait:0
+2020-10-08 19:32:48 nexthop and add is done
+2020-10-08 19:32:48 HA event
+2020-10-08 19:32:48 azd running in slave mode, won't update
+2020-10-08 19:32:48 HA event
+2020-10-08 19:32:51 Become HA slave mode 2
+2020-10-08 19:32:55 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210775
+2020-10-08 19:33:05 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210785
+2020-10-08 19:33:15 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210795
+2020-10-08 19:33:25 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210805
+2020-10-08 19:33:35 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210815
+2020-10-08 19:33:45 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210825
+2020-10-08 19:33:48 azd running in slave mode, won't update
+2020-10-08 19:33:55 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210835
+2020-10-08 19:34:05 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210845
+2020-10-08 19:34:15 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210855
+2020-10-08 19:34:25 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210865
+2020-10-08 19:34:35 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210875
+2020-10-08 19:34:45 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210885
+2020-10-08 19:34:48 azd running in slave mode, won't update
+2020-10-08 19:34:56 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210896
+2020-10-08 19:35:06 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210906
+2020-10-08 19:35:16 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210916
+2020-10-08 19:35:26 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210926
+2020-10-08 19:35:36 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210936
+2020-10-08 19:35:46 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210946
+2020-10-08 19:35:48 azd running in slave mode, won't update
+2020-10-08 19:35:56 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210956
+2020-10-08 19:36:06 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210966
+2020-10-08 19:36:16 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210976
+2020-10-08 19:36:26 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210986
+2020-10-08 19:36:36 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602210996
+2020-10-08 19:36:46 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211006
+2020-10-08 19:36:48 azd running in slave mode, won't update
+2020-10-08 19:36:56 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211016
+2020-10-08 19:37:07 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211027
+2020-10-08 19:37:17 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211037
+2020-10-08 19:37:27 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211047
+2020-10-08 19:37:37 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211057
+2020-10-08 19:37:47 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211067
+2020-10-08 19:37:48 azd running in slave mode, won't update
+2020-10-08 19:37:57 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211077
+2020-10-08 19:38:07 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211087
+2020-10-08 19:38:17 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211097
+2020-10-08 19:38:27 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211107
+2020-10-08 19:38:37 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211117
+2020-10-08 19:38:47 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211127
+2020-10-08 19:38:48 azd running in slave mode, won't update
+2020-10-08 19:38:57 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211137
+2020-10-08 19:39:08 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211148
+2020-10-08 19:39:18 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602210441/1602211158
