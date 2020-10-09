@@ -18,21 +18,21 @@ https://github.com/fortinetsolutions/Azure-Templates/tree/master/FortiGate/Other
 #New-AzureRmResourceGroupDeployment `
 New-AzResourceGroupDeployment `
 -Name "fgtdeploy01" `
--ResourceGroupName "tuenoresourcegroup01" `
+-ResourceGroupName "MyResourceGroup" `
 -TemplateFile $templateFile `
 -location "local" `
 -publicIPNewOrExistingOrNone "new" `
--publicIPAddressName "tuenopublicip01" `
--publicIPResourceGroup "tuenoresourcegroup01" `
+-publicIPAddressName "FGTSinglePIP" `
+-publicIPResourceGroup "MyResourceGroup" `
 -publicIPAddressType "Static" `
 -vnetNewOrExisting "existing" `
--vnetName "tuenovnet01" `
--vnetResourceGroup "tuenoresourcegroup01" `
+-vnetName "FGHAVnet" `
+-vnetResourceGroup "MyResourceGroup" `
 -vnetAddressPrefix  "10.2.0.0/16" `
--subnet1Name "tusubnet01" `
--subnet1Prefix "10.2.0.0/24" `
--subnet2Name "tusubnet02" `
--subnet2Prefix "10.2.1.0/24" `
+-subnet1Name "EntrySubnet" `
+-subnet1Prefix "10.2.1.0/24" `
+-subnet2Name "RemoteSubnet" `
+-subnet2Prefix "10.2.6.0/24" `
 -Debug
 
 (2) Deploy FGT-HA from marketplace (worked)
