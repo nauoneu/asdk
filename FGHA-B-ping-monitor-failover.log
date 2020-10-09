@@ -1,0 +1,345 @@
+di de app azd -1
+Debug messages will be on for 30 minutes.
+
+FGHA-B # di de app hatalk -1
+Debug messages will be on for 30 minutes.
+
+FGHA-B # di de console timestamp enable 
+
+FGHA-B # di de en
+
+FGHA-B # 2020-10-08 06:38:59 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164339
+2020-10-08 06:39:09 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164349
+2020-10-08 06:39:12 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/05150015-e908-4db5-9fad-a4807cd6f005?api-version=2015-06-15
+2020-10-08 06:39:13 result:200
+2020-10-08 06:39:13 {
+  "status": "InProgress"
+}
+2020-10-08 06:39:13 status:InProgress
+2020-10-08 06:39:20 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164360
+2020-10-08 06:39:30 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164370
+2020-10-08 06:39:33 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/05150015-e908-4db5-9fad-a4807cd6f005?api-version=2015-06-15
+2020-10-08 06:39:33 result:200
+2020-10-08 06:39:33 {
+  "status": "InProgress"
+}
+2020-10-08 06:39:33 status:InProgress
+2020-10-08 06:39:40 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164380
+2020-10-08 06:39:50 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164390
+2020-10-08 06:39:53 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/05150015-e908-4db5-9fad-a4807cd6f005?api-version=2015-06-15
+2020-10-08 06:39:53 result:200
+2020-10-08 06:39:53 {
+  "status": "Succeeded"
+}
+2020-10-08 06:39:53 status:Succeeded
+2020-10-08 06:39:53 end wait:0
+2020-10-08 06:39:53 get route table FGTDefaultAPRouteTable in resource group MyResourceGroup
+2020-10-08 06:39:53 result:0
+2020-10-08 06:39:53 matching route:toDefault:toDefault
+2020-10-08 06:39:53 set route toDefault nexthop 10.2.2.5
+2020-10-08 06:39:53 updating route table FGTDefaultAPRouteTable in resource group MyResourceGroup
+2020-10-08 06:39:54 result:0
+2020-10-08 06:39:54 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/1f38bc22-8675-403d-b903-c0a39b8ededd?api-version=2015-06-15
+2020-10-08 06:39:54 result:200
+2020-10-08 06:39:54 {
+  "status": "InProgress"
+}
+2020-10-08 06:39:54 status:InProgress
+2020-10-08 06:40:00 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164400
+2020-10-08 06:40:10 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164410
+2020-10-08 06:40:14 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/1f38bc22-8675-403d-b903-c0a39b8ededd?api-version=2015-06-15
+2020-10-08 06:40:14 result:200
+2020-10-08 06:40:14 {
+  "status": "Succeeded"
+}
+2020-10-08 06:40:14 status:Succeeded
+2020-10-08 06:40:14 end wait:0
+2020-10-08 06:40:14 nexthop and add is done
+2020-10-08 06:40:14 azd sdn connector AZConnector prepare to update
+2020-10-08 06:40:14 azd sdn connector AZConnector start updater process 2773
+2020-10-08 06:40:14 azd sdn connector AZConnector start updating
+2020-10-08 06:40:14 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 06:40:14 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 06:40:14 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 06:40:14 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 06:40:14 azd reap child pid: 2773
+2020-10-08 06:40:20 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164420
+2020-10-08 06:40:30 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164430
+2020-10-08 06:40:40 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164440
+2020-10-08 06:40:50 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164450
+2020-10-08 06:41:00 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164460
+2020-10-08 06:41:10 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164470
+2020-10-08 06:41:14 azd sdn connector AZConnector prepare to update
+2020-10-08 06:41:14 azd sdn connector AZConnector start updater process 2777
+2020-10-08 06:41:14 azd sdn connector AZConnector start updating
+2020-10-08 06:41:14 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 06:41:14 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 06:41:15 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 06:41:15 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 06:41:15 azd reap child pid: 2777
+2020-10-08 06:41:21 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164481
+2020-10-08 06:41:31 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164491
+2020-10-08 06:41:41 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164501
+2020-10-08 06:41:51 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164511
+2020-10-08 06:42:01 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164521
+2020-10-08 06:42:11 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164531
+2020-10-08 06:42:14 azd sdn connector AZConnector prepare to update
+2020-10-08 06:42:14 azd sdn connector AZConnector start updater process 2781
+2020-10-08 06:42:14 azd sdn connector AZConnector start updating
+2020-10-08 06:42:15 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 06:42:15 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 06:42:15 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 06:42:15 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 06:42:15 azd reap child pid: 2781
+2020-10-08 06:42:21 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164541
+2020-10-08 06:42:31 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164551
+2020-10-08 06:42:41 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164561
+2020-10-08 06:42:51 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164571
+2020-10-08 06:43:01 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164581
+2020-10-08 06:43:11 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164591
+2020-10-08 06:43:14 azd sdn connector AZConnector prepare to update
+2020-10-08 06:43:14 azd sdn connector AZConnector start updater process 2785
+2020-10-08 06:43:14 azd sdn connector AZConnector start updating
+2020-10-08 06:43:15 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 06:43:15 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 06:43:15 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 06:43:15 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 06:43:15 azd reap child pid: 2785
+2020-10-08 06:43:21 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164601
+2020-10-08 06:43:31 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164611
+2020-10-08 06:43:41 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164621
+2020-10-08 06:43:52 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164632
+2020-10-08 06:44:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164642
+2020-10-08 06:44:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164652
+2020-10-08 06:44:14 azd sdn connector AZConnector prepare to update
+2020-10-08 06:44:14 2020-10-08 06:44:14 azd sdn connector AZConnector start updating
+2020-10-08 06:44:15 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 06:44:15 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 06:44:15 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 06:44:15 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 06:44:15 azd reap child pid: 2788
+2020-10-08 06:44:22 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164662
+2020-10-08 06:44:32 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164672
+2020-10-08 06:44:42 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164682
+2020-10-08 06:44:52 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164692
+2020-10-08 06:45:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164702
+2020-10-08 06:45:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164712
+2020-10-08 06:45:14 azd sdn connector AZConnector prepare to update
+2020-10-08 06:45:14 azd sdn connector AZConnector start updater process 2791
+2020-10-08 06:45:14 azd sdn connector AZConnector start updating
+2020-10-08 06:45:15 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 06:45:15 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 06:45:15 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 06:45:15 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 06:45:15 azd reap child pid: 2791
+2020-10-08 06:45:22 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164722
+2020-10-08 06:45:32 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164732
+2020-10-08 06:45:42 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602164143/1602164742
+2020-10-08 06:45:47 <hatalk> parse options for 'FGVM04TM20006162', packet_version=20
+2020-10-08 06:45:47 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/3, flag=0x00000000
+2020-10-08 06:45:47 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 06:45:47 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 06:45:47 <hatalk> vcluster_0: 'FGVM04TM20006162' is elected as the cluster master of 2 members
+2020-10-08 06:45:47 <hatalk> vcluster_0: state changed, 2(work)->3(standby)
+2020-10-08 06:45:47 <hatalk> vcluster_0: work_as_slave
+2020-10-08 06:45:47 <hatalk> vcluster_0: start sending garps
+2020-10-08 06:45:47 <hatalk> vcluster_0: update state_change_time, work-as-salve
+2020-10-08 06:45:47 <hatalk> vcluster_0: unset flag HATALK_VMEMBER_F_CLAIM_AS_MASTER
+2020-10-08 06:45:47 <hatalk> cfg_changed is set to 1: hatalk_work_as_slave
+2020-10-08 06:45:47 <hatalk> vcluster_0: hatalk_update_vcluster_st, ha_mode=0x00130200
+2020-10-08 06:45:47 <hatalk> vcluster_0: Send vmsg nvdoms=1, len=20.
+2020-10-08 06:45:47 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 06:45:47 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 06:45:47 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=33
+2020-10-08 06:45:47 <hatalk> hatalk clear mgmt session total 7
+2020-10-08 06:45:47 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 06:45:47 HA event
+2020-10-08 06:45:47 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 06:45:47 <hatalk> reap child 2795 (0)
+2020-10-08 06:45:47 <hatalk> reap child 2796 (0)
+2020-10-08 06:45:47 <hatalk> reap child 2800 (0)
+2020-10-08 06:45:47 <hatalk> parse options for 'FGVM04TM20006162', packet_version=21
+2020-10-08 06:45:47 <hatalk> cfg_changed is set to 1: intf-changed
+2020-10-08 06:45:47 <hatalk> vcluster_0: vmember 'FGVM04TM20006162' updated, override=1, usr_priority=200, mondev/pingsvr=0/0, uptime/reset_count=0/3, flag=0x00000001
+2020-10-08 06:45:47 <hatalk> vcluster_0: reelect=1, vmember updated
+2020-10-08 06:45:47 <hatalk> reap child 2799 (0)
+2020-10-08 06:45:47 <hatalk> vcluster_0: reelect=0, hatalk_vcluster_timer_func
+2020-10-08 06:45:47 <hatalk> vcluster_0: ha_prio's are not changed after master election
+2020-10-08 06:45:47 <hatalk> cfg_changed is set to 0: hatalk_packet_setup_heartbeat
+2020-10-08 06:45:47 <hatalk> setup new heartbeat packet: hbdev='port3', packet_version=34
+2020-10-08 06:45:47 <hatalk:ERRO> options buf is too small: opt_type=41(DEVINFO), opt_sz=13806, buf_sz=1207
+2020-10-08 06:45:47 <hatalk> pack compressed dev_info: dev_nr=4, orig_sz=13800, z_len=75
+2020-10-08 06:45:47 <hatalk> vcluster_0: hatalk_send_all_arp, garps=5, pid-2797
+2020-10-08 06:45:47 <hatalk> reap child 2797 (0)
+2020-10-08 06:45:50 Become HA slave mode 2
+2020-10-08 06:45:52 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164752
+2020-10-08 06:45:55 <hatalk> vcluster_0: hatalk_send_all_arp, garps=4, pid-2801
+2020-10-08 06:45:55 <hatalk> reap child 2801 (0)
+2020-10-08 06:46:02 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164762
+2020-10-08 06:46:03 <hatalk> vcluster_0: hatalk_send_all_arp, garps=3, pid-2802
+2020-10-08 06:46:03 <hatalk> reap child 2802 (0)
+2020-10-08 06:46:11 <hatalk> vcluster_0: hatalk_send_all_arp, garps=2, pid-2803
+2020-10-08 06:46:11 <hatalk> reap child 2803 (0)
+2020-10-08 06:46:12 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164772
+2020-10-08 06:46:14 azd running in slave mode, won't update
+2020-10-08 06:46:19 <hatalk> vcluster_0: hatalk_send_all_arp, garps=1, pid-2807
+2020-10-08 06:46:19 <hatalk> reap child 2807 (0)
+2020-10-08 06:46:23 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164783
+2020-10-08 06:46:33 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164793
+2020-10-08 06:46:43 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164803
+2020-10-08 06:46:53 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164813
+2020-10-08 06:47:03 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164823
+2020-10-08 06:47:13 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164833
+2020-10-08 06:47:14 azd running in slave mode, won't update
+2020-10-08 06:47:23 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164843
+2020-10-08 06:47:33 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164853
+2020-10-08 06:47:43 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164863
+2020-10-08 06:47:53 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164873
+2020-10-08 06:48:03 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164883
+2020-10-08 06:48:13 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164893
+2020-10-08 06:48:14 azd running in slave mode, won't update
+2020-10-08 06:48:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164904
+2020-10-08 06:48:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164914
+2020-10-08 06:48:44 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164924
+2020-10-08 06:48:54 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164934
+2020-10-08 06:49:04 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164944
+2020-10-08 06:49:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164954
+2020-10-08 06:49:14 azd running in slave mode, won't update
+2020-10-08 06:49:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164964
+2020-10-08 06:49:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164974
+2020-10-08 06:49:44 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164984
+2020-10-08 06:49:54 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602164994
+2020-10-08 06:50:04 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165004
+2020-10-08 06:50:14 azd running in slave mode, won't update
+2020-10-08 06:50:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165014
+2020-10-08 06:50:25 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165025
+2020-10-08 06:50:35 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165035
+2020-10-08 06:50:45 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165045
+2020-10-08 06:50:55 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165055
+2020-10-08 06:51:05 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165065
+2020-10-08 06:51:14 azd running in slave mode, won't update
+2020-10-08 06:51:15 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165075
+2020-10-08 06:51:25 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165085
+2020-10-08 06:51:35 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165095
+2020-10-08 06:51:45 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165105
+2020-10-08 06:51:55 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165115
+2020-10-08 06:52:05 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165125
+2020-10-08 06:52:15 azd running in slave mode, won't update
+2020-10-08 06:52:16 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165136
+2020-10-08 06:52:26 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165146
+2020-10-08 06:52:36 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165156
+2020-10-08 06:52:46 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165166
+2020-10-08 06:52:56 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165176
+2020-10-08 06:53:06 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165186
+2020-10-08 06:53:15 azd running in slave mode, won't update
+2020-10-08 06:53:16 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165196
+2020-10-08 06:53:26 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165206
+2020-10-08 06:53:36 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165216
+2020-10-08 06:53:46 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165226
+2020-10-08 06:53:56 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165236
+2020-10-08 06:54:06 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165246
+2020-10-08 06:54:15 azd running in slave mode, won't update
+2020-10-08 06:54:17 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165257
+2020-10-08 06:54:27 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165267
+2020-10-08 06:54:37 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165277
+2020-10-08 06:54:47 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165287
+2020-10-08 06:54:57 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165297
+2020-10-08 06:55:07 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165307
+2020-10-08 06:55:15 azd running in slave mode, won't update
+2020-10-08 06:55:17 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165317
+FGHA-B # 
+FGHA-B # 2020-10-08 06:55:27 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165327
+2020-10-08 06:55:37 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165337
+2020-10-08 06:55:47 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165347
+2020-10-08 06:55:57 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165357
+2020-10-08 06:56:07 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165367
+2020-10-08 06:56:15 azd running in slave mode, won't update
+2020-10-08 06:56:18 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165378
+2020-10-08 06:56:28 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165388
+2020-10-08 06:56:38 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165398
+2020-10-08 06:56:48 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165408
+2020-10-08 06:56:58 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165418
+2020-10-08 06:57:08 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165428
+2020-10-08 06:57:15 azd running in slave mode, won't update
+2020-10-08 06:57:18 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165438
+2020-10-08 06:57:28 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165448
+2020-10-08 06:57:38 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165458
+2020-10-08 06:57:48 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165468
+2020-10-08 06:57:58 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165478
+2020-10-08 06:58:09 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165489
+2020-10-08 06:58:15 azd running in slave mode, won't update
+2020-10-08 06:58:19 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165499
+2020-10-08 06:58:29 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165509
+2020-10-08 06:58:39 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165519
+2020-10-08 06:58:49 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165529
+2020-10-08 06:58:59 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165539
+2020-10-08 06:59:09 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165549
+2020-10-08 06:59:15 azd running in slave mode, won't update
+2020-10-08 06:59:19 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165559
+2020-10-08 06:59:29 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165569
+2020-10-08 06:59:39 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165579
+2020-10-08 06:59:49 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165589
+2020-10-08 06:59:59 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165599
+2020-10-08 07:00:10 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165610
+2020-10-08 07:00:15 azd running in slave mode, won't update
+2020-10-08 07:00:20 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165620
+2020-10-08 07:00:30 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165630
+2020-10-08 07:00:40 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165640
+2020-10-08 07:00:50 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165650
+2020-10-08 07:01:00 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165660
+2020-10-08 07:01:10 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165670
+2020-10-08 07:01:15 azd running in slave mode, won't update
+2020-10-08 07:01:20 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165680
+2020-10-08 07:01:30 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165690
+2020-10-08 07:01:40 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165700
+2020-10-08 07:01:50 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165710
+2020-10-08 07:02:00 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165720
+2020-10-08 07:02:11 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165731
+2020-10-08 07:02:15 azd running in slave mode, won't update
+2020-10-08 07:02:21 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165741
+2020-10-08 07:02:31 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165751
+2020-10-08 07:02:41 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165761
+2020-10-08 07:02:51 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165771
+2020-10-08 07:03:01 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165781
+2020-10-08 07:03:11 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165791
+2020-10-08 07:03:15 azd running in slave mode, won't update
+2020-10-08 07:03:21 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165801
+2020-10-08 07:03:31 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165811
+2020-10-08 07:03:41 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165821
+2020-10-08 07:03:51 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165831
+2020-10-08 07:04:01 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165841
+2020-10-08 07:04:12 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165852
+2020-10-08 07:04:15 azd running in slave mode, won't update
+2020-10-08 07:04:22 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165862
+2020-10-08 07:04:32 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165872
+2020-10-08 07:04:42 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165882
+2020-10-08 07:04:52 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165892
+2020-10-08 07:05:02 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165902
+2020-10-08 07:05:12 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165912
+2020-10-08 07:05:15 azd running in slave mode, won't update
+2020-10-08 07:05:22 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165922
+2020-10-08 07:05:32 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165932
+2020-10-08 07:05:42 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165942
+2020-10-08 07:05:52 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165952
+2020-10-08 07:06:02 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165962
+2020-10-08 07:06:13 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165973
+2020-10-08 07:06:15 azd running in slave mode, won't update
+2020-10-08 07:06:23 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165983
+2020-10-08 07:06:33 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602165993
+2020-10-08 07:06:43 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166003
+2020-10-08 07:06:53 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166013
+2020-10-08 07:07:03 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166023
+2020-10-08 07:07:13 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166033
+2020-10-08 07:07:15 azd running in slave mode, won't update
+2020-10-08 07:07:23 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166043
+2020-10-08 07:07:33 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166053
+2020-10-08 07:07:43 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166063
+2020-10-08 07:07:53 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166073
+2020-10-08 07:08:04 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166084
+2020-10-08 07:08:14 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166094
+2020-10-08 07:08:15 azd running in slave mode, won't update
+2020-10-08 07:08:24 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166104
+2020-10-08 07:08:34 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166114
+2020-10-08 07:08:44 <hatalk> vcluster_0: ha_prio=1(slave), state/chg_time/now=3(standby)/1602164747/1602166124
+Timeout
+exit
