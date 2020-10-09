@@ -1,0 +1,854 @@
+2020-10-08 19:27:52 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210472
+2020-10-08 19:27:52 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:27:52 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:27:53 <hatalk> vcluster_0: hatalk_send_all_arp, garps=1, pid-282
+2020-10-08 19:27:53 send_vip_arp: vd root master 1 intf port1 ip 10.2.1.4
+2020-10-08 19:27:53 send_vip_arp: vd root master 1 intf port2 ip 10.2.2.4
+2020-10-08 19:27:53 <hatalk> reap child 282 (0)
+2020-10-08 19:27:56 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/a3ad8cb9-b7e5-4407-9709-40239f3ff268?api-version=2015-06-15
+2020-10-08 19:27:57 result:200
+2020-10-08 19:27:57 {
+  "status": "Canceled",
+  "error": {
+    "code": "Canceled",
+    "message": "Operation was canceled.",
+    "details": [
+      {
+        "code": "CanceledAndSupersededDueToAnotherOperation",
+        "message": "Operation PutNetworkInterfaceOperation (a3ad8cb9-b7e5-4407-9709-40239f3ff268) was canceled and superseded by operation InternalOperation (ea20f9af-dd49-409b-8a34-c74ced8625af)."
+      }
+    ]
+  }
+}
+2020-10-08 19:27:57 status:Canceled
+2020-10-08 19:27:57 end wait:200
+2020-10-08 19:27:57 updating nic:FGHA-A-Nic1
+2020-10-08 19:27:57 result:0
+2020-10-08 19:27:57 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/7cf81900-ed38-45ae-872f-05bf1f53b68a?api-version=2015-06-15
+2020-10-08 19:27:57 result:200
+2020-10-08 19:27:57 {
+  "status": "InProgress"
+}
+2020-10-08 19:27:57 status:InProgress
+2020-10-08 19:28:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210482
+2020-10-08 19:28:02 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:28:02 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:28:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210492
+2020-10-08 19:28:12 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:28:12 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:28:17 waiting for operation:https://management.local.azurestack.external/subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/providers/Microsoft.Network/locations/westus/operations/7cf81900-ed38-45ae-872f-05bf1f53b68a?api-version=2015-06-15
+2020-10-08 19:28:17 result:200
+2020-10-08 19:28:17 {
+  "status": "Canceled",
+  "error": {
+    "code": "Canceled",
+    "message": "Operation was canceled.",
+    "details": [
+      {
+        "code": "CanceledAndSupersededDueToAnotherOperation",
+        "message": "Operation PutNetworkInterfaceOperation (7cf81900-ed38-45ae-872f-05bf1f53b68a) was canceled and superseded by operation InternalOperation (6fb1f4af-2e17-4827-8767-b08aa4f797da)."
+      }
+    ]
+  }
+}
+2020-10-08 19:28:17 status:Canceled
+2020-10-08 19:28:17 end wait:200
+2020-10-08 19:28:17 updating nic:FGHA-A-Nic1
+2020-10-08 19:28:17 rc=429, {
+  "error": {
+    "code": "RetryableError",
+    "message": "A retryable error occurred.",
+    "details": [
+      {
+        "code": "RetryableErrorDueToAnotherOperation",
+        "message": "Operation PutNetworkInterfaceOperation (59aa86aa-9500-4346-979b-f98e0d7da307) is updating resource /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1. The call can be retried in 14 seconds."
+      }
+    ]
+  }
+}
+2020-10-08 19:28:17 result:429
+2020-10-08 19:28:22 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210502
+2020-10-08 19:28:22 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:28:22 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:28:22 updating nic:FGHA-A-Nic1
+2020-10-08 19:28:23 rc=429, {
+  "error": {
+    "code": "RetryableError",
+    "message": "A retryable error occurred.",
+    "details": [
+      {
+        "code": "RetryableErrorDueToAnotherOperation",
+        "message": "Operation PutNetworkInterfaceOperation (59aa86aa-9500-4346-979b-f98e0d7da307) is updating resource /subscriptions/f6728db2-da37-4b91-9239-3c803b6670dd/resourceGroups/MyResourceGroup/providers/Microsoft.Network/networkInterfaces/FGHA-A-Nic1. The call can be retried in 12 seconds."
+      }
+    ]
+  }
+}
+2020-10-08 19:28:23 result:429
+2020-10-08 19:28:23 get route table FGTDefaultAPRouteTable in resource group MyResourceGroup
+2020-10-08 19:28:23 result:0
+2020-10-08 19:28:23 matching route:toDefault:toDefault
+2020-10-08 19:28:23 route toDefault already has nexthop 10.2.2.4
+2020-10-08 19:28:23 No route needs to be updated
+2020-10-08 19:28:23 nexthop and add is done
+2020-10-08 19:28:31 azd sdn connector AZConnector prepare to update
+2020-10-08 19:28:31 azd sdn connector AZConnector start updater process 284
+2020-10-08 19:28:31 azd sdn connector AZConnector start updating
+2020-10-08 19:28:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:28:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:28:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:28:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:28:32 azd reap child pid: 284
+2020-10-08 19:28:32 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210512
+2020-10-08 19:28:32 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:28:32 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:28:42 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210522
+2020-10-08 19:28:42 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:28:42 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:28:52 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210532
+2020-10-08 19:28:52 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:28:52 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:29:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210542
+2020-10-08 19:29:02 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:29:02 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:29:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210552
+2020-10-08 19:29:12 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:29:12 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:29:23 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210563
+2020-10-08 19:29:23 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:29:23 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:29:31 azd sdn connector AZConnector prepare to update
+2020-10-08 19:29:31 azd sdn connector AZConnector start updater process 287
+2020-10-08 19:29:31 azd sdn connector AZConnector start updating
+2020-10-08 19:29:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:29:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:29:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:29:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:29:32 azd reap child pid: 287
+2020-10-08 19:29:33 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210573
+2020-10-08 19:29:33 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:29:33 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:29:43 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210583
+2020-10-08 19:29:43 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:29:43 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:29:53 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210593
+2020-10-08 19:29:53 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:29:53 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:30:03 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210603
+2020-10-08 19:30:03 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:30:03 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:30:13 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210613
+2020-10-08 19:30:13 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:30:13 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:30:23 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210623
+2020-10-08 19:30:23 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:30:23 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:30:31 azd sdn connector AZConnector prepare to update
+2020-10-08 19:30:31 azd sdn connector AZConnector start updater process 289
+2020-10-08 19:30:31 azd sdn connector AZConnector start updating
+2020-10-08 19:30:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:30:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:30:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:30:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:30:32 azd reap child pid: 289
+2020-10-08 19:30:33 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210633
+2020-10-08 19:30:33 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:30:33 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:30:43 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210643
+2020-10-08 19:30:43 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:30:43 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:30:53 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210653
+2020-10-08 19:30:53 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:30:53 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:31:03 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210663
+2020-10-08 19:31:03 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:31:03 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:31:13 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210673
+2020-10-08 19:31:13 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:31:13 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:31:24 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210684
+2020-10-08 19:31:24 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:31:24 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:31:31 azd sdn connector AZConnector prepare to update
+2020-10-08 19:31:31 azd sdn connector AZConnector start updater process 291
+2020-10-08 19:31:31 azd sdn connector AZConnector start updating
+2020-10-08 19:31:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:31:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:31:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:31:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:31:32 azd reap child pid: 291
+2020-10-08 19:31:34 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210694
+2020-10-08 19:31:34 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:31:34 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:31:44 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210704
+2020-10-08 19:31:44 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:31:44 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:31:54 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210714
+2020-10-08 19:31:54 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:31:54 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:32:04 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210724
+2020-10-08 19:32:04 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:32:04 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:32:14 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210734
+2020-10-08 19:32:14 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:32:14 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:32:24 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210744
+2020-10-08 19:32:24 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:32:24 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:32:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:32:32 azd sdn connector AZConnector start updater process 292
+2020-10-08 19:32:32 azd sdn connector AZConnector start updating
+2020-10-08 19:32:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:32:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:32:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:32:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:32:32 azd reap child pid: 292
+2020-10-08 19:32:34 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210754
+2020-10-08 19:32:34 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:32:34 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:32:44 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210764
+2020-10-08 19:32:44 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:32:44 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:32:54 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210774
+2020-10-08 19:32:54 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:32:54 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:33:04 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210784
+2020-10-08 19:33:04 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:33:04 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:33:14 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210794
+2020-10-08 19:33:14 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:33:14 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:33:24 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210804
+2020-10-08 19:33:24 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:33:24 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:33:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:33:32 azd sdn connector AZConnector start updater process 295
+2020-10-08 19:33:32 azd sdn connector AZConnector start updating
+2020-10-08 19:33:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:33:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:33:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:33:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:33:32 azd reap child pid: 295
+2020-10-08 19:33:34 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210814
+2020-10-08 19:33:34 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:33:34 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:33:44 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210824
+2020-10-08 19:33:44 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:33:44 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:33:55 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210835
+2020-10-08 19:33:55 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:33:55 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:34:05 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210845
+2020-10-08 19:34:05 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:34:05 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:34:15 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210855
+2020-10-08 19:34:15 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:34:15 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:34:25 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210865
+2020-10-08 19:34:25 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:34:25 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:34:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:34:32 azd sdn connector AZConnector start updater process 297
+2020-10-08 19:34:32 azd sdn connector AZConnector start updating
+2020-10-08 19:34:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:34:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:34:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:34:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:34:32 azd reap child pid: 297
+2020-10-08 19:34:35 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210875
+2020-10-08 19:34:35 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:34:35 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:34:45 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210885
+2020-10-08 19:34:45 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:34:45 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:34:55 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210895
+2020-10-08 19:34:55 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:34:55 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:35:05 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210905
+2020-10-08 19:35:05 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:35:05 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:35:15 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210915
+2020-10-08 19:35:15 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:35:15 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:35:25 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210925
+2020-10-08 19:35:25 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:35:25 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:35:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:35:32 azd sdn connector AZConnector start updater process 299
+2020-10-08 19:35:32 azd sdn connector AZConnector start updating
+2020-10-08 19:35:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:35:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:35:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:35:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:35:32 azd reap child pid: 299
+2020-10-08 19:35:35 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210935
+2020-10-08 19:35:35 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:35:35 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:35:45 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210945
+2020-10-08 19:35:45 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:35:45 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:35:55 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210955
+2020-10-08 19:35:55 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:35:55 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:36:05 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210965
+2020-10-08 19:36:05 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:36:05 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:36:16 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210976
+2020-10-08 19:36:16 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:36:16 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:36:26 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210986
+2020-10-08 19:36:26 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:36:26 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:36:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:36:32 azd sdn connector AZConnector start updater process 301
+2020-10-08 19:36:32 azd sdn connector AZConnector start updating
+2020-10-08 19:36:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:36:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:36:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:36:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:36:32 azd reap child pid: 301
+2020-10-08 19:36:36 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602210996
+2020-10-08 19:36:36 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:36:36 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:36:46 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211006
+2020-10-08 19:36:46 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:36:46 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:36:56 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211016
+2020-10-08 19:36:56 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:36:56 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:37:06 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211026
+2020-10-08 19:37:06 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:37:06 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:37:16 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211036
+2020-10-08 19:37:16 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:37:16 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:37:26 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211046
+2020-10-08 19:37:26 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:37:26 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:37:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:37:32 azd sdn connector AZConnector start updater process 315
+2020-10-08 19:37:32 azd sdn connector AZConnector start updating
+2020-10-08 19:37:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:37:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:37:32 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:37:32 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:37:32 azd reap child pid: 315
+2020-10-08 19:37:36 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211056
+2020-10-08 19:37:36 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:37:36 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:37:46 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211066
+2020-10-08 19:37:46 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:37:46 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:37:56 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211076
+2020-10-08 19:37:56 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:37:56 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:38:06 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211086
+2020-10-08 19:38:06 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:38:06 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:38:17 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211097
+2020-10-08 19:38:17 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:38:17 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:38:27 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211107
+2020-10-08 19:38:27 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:38:27 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:38:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:38:32 azd sdn connector AZConnector start updating
+2020-10-08 19:38:32 azd sdn connector AZConnector start updater process 317
+2020-10-08 19:38:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:38:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:38:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:38:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:38:33 azd reap child pid: 317
+2020-10-08 19:38:37 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211117
+2020-10-08 19:38:37 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:38:37 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:38:47 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211127
+2020-10-08 19:38:47 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:38:47 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:38:57 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211137
+2020-10-08 19:38:57 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:38:57 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:39:07 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211147
+2020-10-08 19:39:07 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:39:07 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:39:17 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211157
+2020-10-08 19:39:17 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:39:17 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:39:27 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211167
+2020-10-08 19:39:27 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:39:27 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:39:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:39:32 azd sdn connector AZConnector start updating
+2020-10-08 19:39:32 azd sdn connector AZConnector start updater process 319
+2020-10-08 19:39:32 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:39:32 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:39:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:39:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:39:33 azd reap child pid: 319
+2020-10-08 19:39:37 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211177
+2020-10-08 19:39:37 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:39:37 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:39:47 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211187
+2020-10-08 19:39:47 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:39:47 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:39:57 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211197
+2020-10-08 19:39:57 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:39:57 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:40:07 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211207
+2020-10-08 19:40:07 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:40:07 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:40:17 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211217
+2020-10-08 19:40:17 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:40:17 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:40:27 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211227
+2020-10-08 19:40:27 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:40:27 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:40:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:40:32 azd sdn connector AZConnector start updating
+2020-10-08 19:40:32 azd sdn connector AZConnector start updater process 321
+2020-10-08 19:40:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:40:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:40:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:40:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:40:33 azd reap child pid: 321
+2020-10-08 19:40:38 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211238
+2020-10-08 19:40:38 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:40:38 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:40:48 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211248
+2020-10-08 19:40:48 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:40:48 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:40:58 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211258
+2020-10-08 19:40:58 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:40:58 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:41:08 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211268
+2020-10-08 19:41:08 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:41:08 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:41:18 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211278
+2020-10-08 19:41:18 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:41:18 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:41:28 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211288
+2020-10-08 19:41:28 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:41:28 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:41:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:41:32 azd sdn connector AZConnector start updating
+2020-10-08 19:41:32 azd sdn connector AZConnector start updater process 323
+2020-10-08 19:41:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:41:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:41:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:41:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:41:33 azd reap child pid: 323
+2020-10-08 19:41:38 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211298
+2020-10-08 19:41:38 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:41:38 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:41:48 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211308
+2020-10-08 19:41:48 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:41:48 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:41:58 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211318
+2020-10-08 19:41:58 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:41:58 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:42:08 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211328
+2020-10-08 19:42:08 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:42:08 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:42:18 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211338
+2020-10-08 19:42:18 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:42:18 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:42:28 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211348
+2020-10-08 19:42:28 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:42:28 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:42:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:42:32 azd sdn connector AZConnector start updater process 325
+2020-10-08 19:42:32 azd sdn connector AZConnector start updating
+2020-10-08 19:42:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:42:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:42:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:42:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:42:33 azd reap child pid: 325
+2020-10-08 19:42:38 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211358
+2020-10-08 19:42:38 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:42:38 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:42:49 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211369
+2020-10-08 19:42:49 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:42:49 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:42:59 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211379
+2020-10-08 19:42:59 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:42:59 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:43:09 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211389
+2020-10-08 19:43:09 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:43:09 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:43:19 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211399
+2020-10-08 19:43:19 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:43:19 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:43:29 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211409
+2020-10-08 19:43:29 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:43:29 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:43:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:43:32 azd sdn connector AZConnector start updater process 327
+2020-10-08 19:43:32 azd sdn connector AZConnector start updating
+2020-10-08 19:43:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:43:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:43:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:43:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:43:33 azd reap child pid: 327
+2020-10-08 19:43:39 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211419
+2020-10-08 19:43:39 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:43:39 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:43:49 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211429
+2020-10-08 19:43:49 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:43:49 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:43:59 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211439
+2020-10-08 19:43:59 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:43:59 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:44:09 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211449
+2020-10-08 19:44:09 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:44:09 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:44:19 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211459
+2020-10-08 19:44:19 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:44:19 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:44:29 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211469
+2020-10-08 19:44:29 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:44:29 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:44:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:44:32 azd sdn connector AZConnector start updater process 329
+2020-10-08 19:44:32 azd sdn connector AZConnector start updating
+2020-10-08 19:44:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:44:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:44:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:44:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:44:33 azd reap child pid: 329
+2020-10-08 19:44:39 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211479
+2020-10-08 19:44:39 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:44:39 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:44:49 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211489
+2020-10-08 19:44:49 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:44:49 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:45:00 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211500
+2020-10-08 19:45:00 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:45:00 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:45:10 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211510
+2020-10-08 19:45:10 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:45:10 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:45:20 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211520
+2020-10-08 19:45:20 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:45:20 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:45:30 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211530
+2020-10-08 19:45:30 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:45:30 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:45:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:45:32 azd sdn connector AZConnector start updating
+2020-10-08 19:45:32 azd sdn connector AZConnector start updater process 331
+2020-10-08 19:45:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:45:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:45:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:45:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:45:33 azd reap child pid: 331
+2020-10-08 19:45:40 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211540
+2020-10-08 19:45:40 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:45:40 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:45:50 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211550
+2020-10-08 19:45:50 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:45:50 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:46:00 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211560
+2020-10-08 19:46:00 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:46:00 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:46:10 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211570
+2020-10-08 19:46:10 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:46:10 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:46:20 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211580
+2020-10-08 19:46:20 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:46:20 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:46:30 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211590
+2020-10-08 19:46:30 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:46:30 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:46:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:46:32 azd sdn connector AZConnector start updater process 333
+2020-10-08 19:46:32 azd sdn connector AZConnector start updating
+2020-10-08 19:46:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:46:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:46:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:46:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:46:33 azd reap child pid: 333
+2020-10-08 19:46:40 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211600
+2020-10-08 19:46:40 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:46:40 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:46:50 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211610
+2020-10-08 19:46:50 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:46:50 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:47:00 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211620
+2020-10-08 19:47:00 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:47:00 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:47:11 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211631
+2020-10-08 19:47:11 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:47:11 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:47:21 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211641
+2020-10-08 19:47:21 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:47:21 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:47:31 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211651
+2020-10-08 19:47:31 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:47:31 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:47:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:47:32 azd sdn connector AZConnector start updater process 335
+2020-10-08 19:47:32 azd sdn connector AZConnector start updating
+2020-10-08 19:47:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:47:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:47:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:47:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:47:33 azd reap child pid: 335
+2020-10-08 19:47:41 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211661
+2020-10-08 19:47:41 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:47:41 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:47:51 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211671
+2020-10-08 19:47:51 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:47:51 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:48:01 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211681
+2020-10-08 19:48:01 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:48:01 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:48:11 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211691
+2020-10-08 19:48:11 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:48:11 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:48:21 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211701
+2020-10-08 19:48:21 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:48:21 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:48:31 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211711
+2020-10-08 19:48:31 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:48:31 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:48:32 azd sdn connector AZConnector prepare to update
+2020-10-08 19:48:32 azd sdn connector AZConnector start updater process 337
+2020-10-08 19:48:32 azd sdn connector AZConnector start updating
+2020-10-08 19:48:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:48:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:48:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:48:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:48:33 azd reap child pid: 337
+2020-10-08 19:48:41 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211721
+2020-10-08 19:48:41 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:48:41 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:48:51 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211731
+2020-10-08 19:48:51 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:48:51 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:49:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211742
+2020-10-08 19:49:02 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:49:02 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:49:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211752
+2020-10-08 19:49:12 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:49:12 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:49:22 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211762
+2020-10-08 19:49:22 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:49:22 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:49:32 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211772
+2020-10-08 19:49:32 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:49:32 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:49:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:49:33 azd sdn connector AZConnector start updater process 339
+2020-10-08 19:49:33 azd sdn connector AZConnector start updating
+2020-10-08 19:49:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:49:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:49:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:49:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:49:33 azd reap child pid: 339
+2020-10-08 19:49:42 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211782
+2020-10-08 19:49:42 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:49:42 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:49:52 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211792
+2020-10-08 19:49:52 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:49:52 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:50:02 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211802
+2020-10-08 19:50:02 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:50:02 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:50:12 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211812
+2020-10-08 19:50:12 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:50:12 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:50:22 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211822
+2020-10-08 19:50:22 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:50:22 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:50:32 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211832
+2020-10-08 19:50:32 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:50:32 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:50:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:50:33 azd sdn connector AZConnector start updater process 341
+2020-10-08 19:50:33 azd sdn connector AZConnector start updating
+2020-10-08 19:50:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:50:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:50:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:50:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:50:33 azd reap child pid: 341
+2020-10-08 19:50:42 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211842
+2020-10-08 19:50:42 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:50:42 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:50:53 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211853
+2020-10-08 19:50:53 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:50:53 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:51:03 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211863
+2020-10-08 19:51:03 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:51:03 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:51:13 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211873
+2020-10-08 19:51:13 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:51:13 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:51:23 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211883
+2020-10-08 19:51:23 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:51:23 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:51:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:51:33 azd sdn connector AZConnector start updater process 343
+2020-10-08 19:51:33 azd sdn connector AZConnector start updating
+2020-10-08 19:51:33 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211893
+2020-10-08 19:51:33 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:51:33 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:51:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:51:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:51:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:51:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:51:33 azd reap child pid: 343
+2020-10-08 19:51:43 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211903
+2020-10-08 19:51:43 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:51:43 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:51:53 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211913
+2020-10-08 19:51:53 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:51:53 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:52:03 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211923
+2020-10-08 19:52:03 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:52:03 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:52:13 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211933
+2020-10-08 19:52:13 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:52:13 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:52:23 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211943
+2020-10-08 19:52:23 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:52:23 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:52:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:52:33 azd sdn connector AZConnector start updating
+2020-10-08 19:52:33 azd sdn connector AZConnector start updater process 345
+2020-10-08 19:52:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:52:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:52:33 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:52:33 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:52:33 azd reap child pid: 345
+2020-10-08 19:52:33 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211953
+2020-10-08 19:52:33 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:52:33 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:52:44 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211964
+2020-10-08 19:52:44 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:52:44 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:52:54 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211974
+2020-10-08 19:52:54 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:52:54 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:53:04 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211984
+2020-10-08 19:53:04 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:53:04 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:53:14 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602211994
+2020-10-08 19:53:14 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:53:14 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:53:24 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212004
+2020-10-08 19:53:24 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:53:24 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:53:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:53:33 azd sdn connector AZConnector start updating
+2020-10-08 19:53:33 azd sdn connector AZConnector start updater process 347
+2020-10-08 19:53:34 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212014
+2020-10-08 19:53:34 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:53:34 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:53:34 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:53:34 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:53:34 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:53:34 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:53:34 azd reap child pid: 347
+2020-10-08 19:53:44 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212024
+2020-10-08 19:53:44 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:53:44 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:53:54 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212034
+2020-10-08 19:53:54 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:53:54 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:54:04 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212044
+2020-10-08 19:54:04 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:54:04 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:54:14 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212054
+2020-10-08 19:54:14 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:54:14 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:54:24 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212064
+2020-10-08 19:54:24 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:54:24 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:54:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:54:33 azd sdn connector AZConnector start updater process 349
+2020-10-08 19:54:33 azd sdn connector AZConnector start updating
+2020-10-08 19:54:33 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:54:33 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:54:34 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:54:34 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:54:34 azd reap child pid: 349
+2020-10-08 19:54:35 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212075
+2020-10-08 19:54:35 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:54:35 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:54:45 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212085
+2020-10-08 19:54:45 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:54:45 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:54:55 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212095
+2020-10-08 19:54:55 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:54:55 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:55:05 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212105
+2020-10-08 19:55:05 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:55:05 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:55:15 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212115
+2020-10-08 19:55:15 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:55:15 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:55:25 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212125
+2020-10-08 19:55:25 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:55:25 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:55:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:55:33 azd sdn connector AZConnector start updater process 351
+2020-10-08 19:55:33 azd sdn connector AZConnector start updating
+2020-10-08 19:55:34 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:55:34 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:55:34 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:55:34 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:55:34 azd reap child pid: 351
+2020-10-08 19:55:35 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212135
+2020-10-08 19:55:35 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:55:35 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:55:45 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212145
+2020-10-08 19:55:45 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:55:45 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:55:55 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212155
+2020-10-08 19:55:55 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:55:55 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:56:05 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212165
+2020-10-08 19:56:05 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:56:05 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:56:15 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212175
+2020-10-08 19:56:15 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:56:15 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:56:26 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212186
+2020-10-08 19:56:26 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:56:26 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:56:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:56:33 azd sdn connector AZConnector start updating
+2020-10-08 19:56:33 azd sdn connector AZConnector start updater process 353
+2020-10-08 19:56:34 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:56:34 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:56:34 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:56:34 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:56:34 azd reap child pid: 353
+2020-10-08 19:56:36 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212196
+2020-10-08 19:56:36 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:56:36 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:56:46 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212206
+2020-10-08 19:56:46 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:56:46 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:56:56 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212216
+2020-10-08 19:56:56 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:56:56 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:57:06 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212226
+2020-10-08 19:57:06 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:57:06 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:57:16 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212236
+2020-10-08 19:57:16 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:57:16 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:57:26 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212246
+2020-10-08 19:57:26 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:57:26 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
+2020-10-08 19:57:33 azd sdn connector AZConnector prepare to update
+2020-10-08 19:57:33 azd sdn connector AZConnector start updating
+2020-10-08 19:57:33 azd sdn connector AZConnector start updater process 355
+2020-10-08 19:57:36 rc=404, {"error":{"code":"InvalidResourceType","message":"The resource type could not be found in the namespace 'Microsoft.Network' for api version '2015-06-15'."}}
+2020-10-08 19:57:36 azd failed to list all application gateway for f6728db2-da37-4b91-9239-3c803b6670dd
+2020-10-08 19:57:36 azd sdn connector AZConnector start updating IP addresses
+2020-10-08 19:57:36 azd sdn connector AZConnector finish updating IP addresses
+2020-10-08 19:57:36 azd reap child pid: 355
+2020-10-08 19:57:36 <hatalk> vcluster_0: ha_prio=0(master), state/chg_time/now=2(work)/1602210441/1602212256
+2020-10-08 19:57:36 <hatalk> vcluster_0: intf(port1) pingsvr failure value is 0
+2020-10-08 19:57:36 <hatalk> vcluster_0: pingsvr_failure_value/threshold=0/0
